@@ -1,0 +1,104 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "imageUrl": "assets/news/research-publication.jpg",
+      "name": "New Research Publication on Digital Health Equity",
+      "description": "Our latest study examining digital health disparities in immigrant communities has been published in the Journal of Social Work Research. The findings highlight critical gaps in service accessibility.",
+      "tags": ["Research", "Health Equity", "Publication"],
+      "createAt": "2024-01-15",
+      "pageUrl": "https://doi.org/10.1080/1369183X.2024.2328578",
+      "category": "publication"
+    },
+    {
+      "id": 2,
+      "imageUrl": "assets/news/nsf-grant.jpg",
+      "name": "Awarded NSF Grant for Community-Based Research",
+      "description": "Received a three-year grant from the National Science Foundation to study online community support systems for minority populations. This $850,000 project will begin in March 2024.",
+      "tags": ["Funding", "NSF", "Community"],
+      "createAt": "2023-12-20",
+      "pageUrl": "https://www.nsf.gov/news/news_summ.jsp?cntn_id=307849",
+      "category": "grant"
+    },
+    {
+      "id": 3,
+      "imageUrl": "assets/news/conference-keynote.jpg",
+      "name": "Keynote Speaker at International Social Work Conference",
+      "description": "Delivered keynote address on 'Digital Inclusion and Mental Health in Immigrant Communities' at the 2023 International Conference on Social Work in Chicago.",
+      "tags": ["Conference", "Keynote", "International"],
+      "createAt": "2023-11-10",
+      "pageUrl": "https://ifsw.org/events/",
+      "category": "media"
+    },
+    {
+      "id": 4,
+      "imageUrl": "assets/news/new-course.jpg",
+      "name": "New Course: Data Science for Social Work",
+      "description": "Launching a new graduate course combining data science methodologies with social work practice for the Spring 2024 semester. Registration is now open.",
+      "tags": ["Teaching", "Data Science", "Course"],
+      "createAt": "2023-10-05",
+      "pageUrl": "https://brownschool.wustl.edu/courses/data-science-social-work",
+      "category": "publication"
+    },
+    {
+      "id": 5,
+      "imageUrl": "assets/news/collaboration.jpg",
+      "name": "Research Collaboration with Brown School Health Initiative",
+      "description": "Beginning a new collaborative project examining the impact of social media on mental health outcomes in Asian American youth. The study will involve 500 participants.",
+      "tags": ["Collaboration", "Brown School", "Mental Health"],
+      "createAt": "2023-09-15",
+      "pageUrl": "https://brownschool.wustl.edu/research/",
+      "category": "publication"
+    },
+    {
+      "id": 6,
+      "imageUrl": "assets/news/workshop.jpg",
+      "name": "Workshop on Cultural Competency in Digital Health",
+      "description": "Leading a professional development workshop for healthcare providers on implementing culturally responsive digital health interventions.",
+      "tags": ["Workshop", "Cultural Competency", "Healthcare"],
+      "createAt": "2023-08-22",
+      "pageUrl": "https://example.com/workshop",
+      "category": "media"
+    },
+    {
+      "id": 7,
+      "imageUrl": "assets/news/book-chapter.jpg",
+      "name": "New Book Chapter on Immigration Policy and Health",
+      "description": "Contributed a chapter to the upcoming book 'Global Perspectives on Immigration and Health' examining policy frameworks across different countries.",
+      "tags": ["Publication", "Immigration", "Policy"],
+      "createAt": "2023-07-18",
+      "pageUrl": "https://example.com/book",
+      "category": "publication"
+    },
+    {
+      "id": 8,
+      "imageUrl": "assets/news/award.jpg",
+      "name": "Excellence in Teaching Award 2023",
+      "description": "Honored with the Excellence in Teaching Award from Brown School for innovative pedagogical approaches in social work education.",
+      "tags": ["Award", "Teaching", "Excellence"],
+      "createAt": "2023-06-01",
+      "pageUrl": "https://brownschool.wustl.edu/news/teaching-awards",
+      "category": "award"
+    },
+    {
+      "id": 9,
+      "imageUrl": "assets/news/podcast.jpg",
+      "name": "Featured on Social Work Research Podcast",
+      "description": "Discussed research findings on immigrant health disparities and digital intervention strategies on the 'Future of Social Work' podcast series.",
+      "tags": ["Podcast", "Interview", "Research"],
+      "createAt": "2023-05-10",
+      "pageUrl": "https://example.com/podcast",
+      "category": "media"
+    },
+    {
+      "id": 10,
+      "imageUrl": "assets/news/policy-brief.jpg",
+      "name": "Policy Brief: Improving Access to Mental Health Services",
+      "description": "Published policy recommendations for state and federal agencies on enhancing mental health service accessibility for immigrant communities.",
+      "tags": ["Policy", "Mental Health", "Access"],
+      "createAt": "2023-04-03",
+      "pageUrl": "https://example.com/policy-brief",
+      "category": "publication"
+    }
+  ]
+}

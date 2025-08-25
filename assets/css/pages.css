@@ -1,0 +1,1047 @@
+/* Common Page Styles */
+.page-wrapper {
+    padding: 40px 0;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.page-header h1 {
+    font-size: 42px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    color: #666;
+    font-weight: 400;
+}
+
+/* =========================
+   CV PAGE STYLES
+   ========================= */
+
+/* CV Download Section */
+.cv-download-section {
+    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.cv-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cv-info i {
+    font-size: 48px;
+    color: var(--primary-color);
+}
+
+.cv-details h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.cv-details p {
+    color: #666;
+    font-size: 14px;
+}
+
+.download-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.download-btn:hover {
+    background-color: var(--link-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(165, 20, 23, 0.3);
+}
+
+/* PDF Viewer Section */
+.pdf-viewer-section {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.pdf-viewer-header {
+    background: #f8f8f8;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.pdf-viewer-header h2 {
+    font-size: 20px;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.pdf-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.pdf-btn {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.pdf-btn:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+#pageInfo {
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+}
+
+.pdf-container {
+    height: 800px;
+    background: #f5f5f5;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+#pdf-canvas {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.pdf-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pdf-loading:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Quick Links */
+.cv-quick-links {
+    margin-top: 50px;
+}
+
+.cv-quick-links h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.quick-link-card {
+    background: #fff;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s;
+}
+
+.quick-link-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.quick-link-card i {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.quick-link-card span {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+}
+
+/* =========================
+   RESEARCH PAGE STYLES
+   ========================= */
+
+/* Research Introduction */
+.research-intro {
+    margin-bottom: 50px;
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #555;
+    text-align: justify;
+    padding: 30px;
+    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+    border-radius: 12px;
+}
+
+/* Research Level Sections */
+.research-level-section {
+    margin-bottom: 60px;
+}
+
+.research-level-section .section-label {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.section-content {
+    padding-left: 20px;
+}
+
+.section-description {
+    font-size: 15.5px;
+    line-height: 1.85;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Publications List (Research) */
+.research-level-section .publications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.publication-entry {
+    padding: 20px;
+    background: #fff;
+    border-left: 3px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+
+.publication-entry:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.publication-text {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.publication-text strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.publication-text em {
+    font-style: italic;
+}
+
+.publication-entry .pub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.publication-entry .pub-link:hover {
+    color: var(--link-hover);
+    transform: translateX(3px);
+}
+
+.publication-entry .pub-link i {
+    font-size: 12px;
+}
+
+
+/* =========================
+   TEACHING PAGE STYLES
+   ========================= */
+
+/* Teaching Section */
+.teaching-section {
+    margin-bottom: 60px;
+}
+
+.section-label {
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+/* Pedagogy Section */
+.pedagogy-content p {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.pedagogy-list {
+    margin-top: 30px;
+}
+
+.pedagogy-item {
+    margin-bottom: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s;
+}
+
+.pedagogy-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.pedagogy-item h3 {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pedagogy-item h3 i {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.pedagogy-item p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+    margin: 0;
+}
+
+/* Courses Table Section */
+.courses-table {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.university-courses {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.university-courses:hover {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transform: translateY(-2px);
+}
+
+.university-logo {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8f8f8;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.university-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.university-info h3 {
+    font-size: 18px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.course-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.course-list li {
+    padding: 8px 0;
+    color: #666;
+    font-size: 15px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.course-list li:before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Student Quotes Section */
+.student-quotes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.quote-card {
+    background: linear-gradient(135deg, #fff 0%, #f9f9f9 100%);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.quote-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.quote-icon {
+    font-size: 24px;
+    color: var(--primary-color);
+    opacity: 0.3;
+    position: absolute;
+    top: 20px;
+    left: 25px;
+}
+
+.quote-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #555;
+    font-style: italic;
+    margin: 15px 0 20px 30px;
+}
+
+.quote-source {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #999;
+    font-weight: 500;
+}
+
+/* Teaching Resources (reusing from original) */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.resource-card {
+    background: #fff;
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s;
+}
+
+.resource-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.resource-card i {
+    font-size: 32px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    display: block;
+}
+
+.resource-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.resource-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* =========================
+   NEWS PAGE STYLES
+   ========================= */
+
+/* News Controls */
+.news-controls {
+    margin-bottom: 40px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.news-search-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.news-search-input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 2px solid var(--border-color);
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 15px;
+}
+
+.news-search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.news-search-btn {
+    padding: 12px 25px;
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.news-search-btn:hover {
+    background: var(--link-hover);
+}
+
+.news-filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-chip {
+    padding: 8px 20px;
+    background: #fff;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.filter-chip:hover {
+    border-color: var(--primary-color);
+}
+
+.filter-chip.active {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+/* News Grid */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.news-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.news-card-image {
+    position: relative;
+    height: 200px;
+    background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+    overflow: hidden;
+}
+
+.news-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-category {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.news-card-content {
+    padding: 25px;
+}
+
+.news-meta {
+    margin-bottom: 15px;
+}
+
+.news-date {
+    font-size: 13px;
+    color: #999;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.news-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.news-tag {
+    background: #f0f0f0;
+    color: #666;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+}
+
+.news-tag:hover {
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.news-title {
+    margin-bottom: 15px;
+}
+
+.news-title a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    transition: color 0.3s;
+}
+
+.news-title a:hover {
+    color: var(--primary-color);
+}
+
+.news-excerpt {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.read-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s;
+}
+
+.read-more:hover {
+    gap: 10px;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.page-btn,
+.page-number {
+    padding: 10px 15px;
+    border: 2px solid var(--border-color);
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.page-btn:hover:not(:disabled),
+.page-number:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.page-number.active {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+.page-dots {
+    padding: 0 10px;
+    color: #999;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .page-subtitle {
+        font-size: 16px;
+    }
+
+    /* CV Page Mobile */
+    .cv-download-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .cv-info {
+        flex-direction: column;
+    }
+
+    .pdf-container {
+        height: 500px;
+    }
+
+    .pdf-controls {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .pdf-viewer-header {
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .pdf-viewer-header h2 {
+        font-size: 18px;
+    }
+
+    .pdf-btn {
+        padding: 10px 12px;
+        min-width: 44px;
+    }
+
+    #pageInfo {
+        font-size: 12px;
+        order: -1;
+    }
+
+    /* Research Page Mobile */
+    .intro-text {
+        padding: 20px;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .section-content {
+        padding-left: 10px;
+    }
+
+    .section-description {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .publication-entry {
+        padding: 15px;
+    }
+
+    .publication-text {
+        font-size: 14px;
+    }
+
+    /* Teaching Page Mobile */
+    .pedagogy-item {
+        padding: 20px;
+    }
+
+    .pedagogy-item h3 {
+        font-size: 16px;
+    }
+
+    .university-courses {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .university-logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .student-quotes {
+        grid-template-columns: 1fr;
+    }
+
+    .quote-card {
+        padding: 25px;
+    }
+
+    /* News Page Mobile */
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .news-search-form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 28px;
+    }
+
+    .quick-links-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-number {
+        font-size: 28px;
+    }
+
+    .news-card-content {
+        padding: 20px;
+    }
+
+    .news-title a {
+        font-size: 18px;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+
+    /* PDF Viewer Extra Small Mobile */
+    .pdf-container {
+        height: 400px;
+        padding: 10px;
+    }
+
+    #pdf-canvas {
+        max-width: calc(100% - 20px);
+        max-height: calc(100% - 20px);
+    }
+
+    .pdf-viewer-header {
+        padding: 10px;
+    }
+
+    .pdf-btn {
+        padding: 8px 10px;
+        font-size: 12px;
+        min-width: 40px;
+    }
+
+    #pageInfo {
+        font-size: 11px;
+    }
+
+    .cv-details h3 {
+        font-size: 20px;
+    }
+
+    .cv-details p {
+        font-size: 12px;
+    }
+
+    .cv-info i {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 360px) {
+    /* Ultra Small Mobile (360px) */
+    .pdf-container {
+        height: 350px;
+        padding: 5px;
+    }
+
+    #pdf-canvas {
+        max-width: calc(100% - 10px);
+        max-height: calc(100% - 10px);
+    }
+
+    .pdf-viewer-header {
+        padding: 8px;
+    }
+
+    .pdf-viewer-header h2 {
+        font-size: 16px;
+    }
+
+    .pdf-controls {
+        gap: 5px;
+    }
+
+    .pdf-btn {
+        padding: 6px 8px;
+        font-size: 11px;
+        min-width: 36px;
+    }
+
+    .pdf-btn i {
+        font-size: 10px;
+    }
+
+    #pageInfo {
+        font-size: 10px;
+        padding: 0 5px;
+    }
+
+    .cv-download-section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .download-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .cv-details h3 {
+        font-size: 18px;
+    }
+
+    .cv-info i {
+        font-size: 32px;
+    }
+
+    .quick-link-card {
+        padding: 20px;
+    }
+
+    .quick-link-card i {
+        font-size: 28px;
+    }
+
+    .quick-link-card span {
+        font-size: 14px;
+    }
+}
