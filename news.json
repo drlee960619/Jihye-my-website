@@ -3,7 +3,7 @@
     {
       "id": 1,
       "imageUrl": "assets/news/research-publication.jpg",
-      "name": "New Research Publication on Digital Health Equity",
+      "name": "Scholar discusses refugee research",
       "description": "Mitra Naseh, who directs the Forced Migration Initiative at the Brown School, takes part in a podcast episode recapping the International Association for the Study of Forced Migration conference in Indonesia. She and doctoral student Jihye Lee discussed their research on resettled refugees in the U.S.",
       "tags": ["Refugee", "Economic Integration", "Podcast"],
       "createAt": "2025-08-25",
@@ -13,11 +13,11 @@
     {
       "id": 2,
       "imageUrl": "assets/news/nsf-grant.jpg",
-      "name": "Awarded NSF Grant for Community-Based Research",
-      "description": "Received a three-year grant from the National Science Foundation to study online community support systems for minority populations. This $850,000 project will begin in March 2024.",
+      "name": "Two from Brown School named fellows by WashU’s Center for Race, Ethnicity & Equity",
+      "description": "Jihye Lee, a PhD student in social work, has been selected as a 2025-2026 Race & Ethnicity Scholar Fellow. This fellowship is awarded annually to three graduate students whose work advances scholarship in race, ethnicity, and equity. Fellows participate in events, workshops, and professional development opportunities, and are encouraged to share their research or creative work with their cohort and center affiliates.",
       "tags": ["Funding", "NSF", "Community"],
-      "createAt": "2023-12-20",
-      "pageUrl": "https://www.nsf.gov/news/news_summ.jsp?cntn_id=307849",
+      "createAt": "2025-05-08",
+      "pageUrl": "https://brownschool.washu.edu/2025/05/two-from-brown-school-named-fellows-by-washus-center-for-race-ethnicity-equity/",
       "category": "grant"
     },
     {
