@@ -4,11 +4,11 @@
       "id": 1,
       "imageUrl": "assets/news/research-publication.jpg",
       "name": "New Research Publication on Digital Health Equity",
-      "description": "Our latest study examining digital health disparities in immigrant communities has been published in the Journal of Social Work Research. The findings highlight critical gaps in service accessibility.",
-      "tags": ["Research", "Health Equity", "Publication"],
-      "createAt": "2024-01-15",
-      "pageUrl": "https://doi.org/10.1080/1369183X.2024.2328578",
-      "category": "publication"
+      "description": "Mitra Naseh, who directs the Forced Migration Initiative at the Brown School, takes part in a podcast episode recapping the International Association for the Study of Forced Migration conference in Indonesia. She and doctoral student Jihye Lee discussed their research on resettled refugees in the U.S.",
+      "tags": ["Refugee", "Economic Integration", "Podcast"],
+      "createAt": "2025-08-25",
+      "pageUrl": "https://source.washu.edu/clip/perspectives/?utm_source=newsletter&utm_medium=email&utm_content=Read%20more%20Perspectives%C2%A0%E2%86%92&utm_campaign=Record%208-25-25",
+      "category": "Media"
     },
     {
       "id": 2,
