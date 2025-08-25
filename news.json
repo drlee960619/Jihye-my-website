@@ -3,9 +3,9 @@
     {
       "id": 1,
       "imageUrl": "assets/news/research-publication.jpg",
-      "name": "Scholar discusses refugee research",
-      "description": "Mitra Naseh, who directs the Forced Migration Initiative at the Brown School, takes part in a podcast episode recapping the International Association for the Study of Forced Migration conference in Indonesia. She and doctoral student Jihye Lee discussed their research on resettled refugees in the U.S.",
-      "tags": ["Refugee", "Economic Integration", "Podcast"],
+      "name": "Scholar discusses refugee research (IASFM20 podcast)",
+      "description": "Featured in a conversation with Dr.Naseh and Akino Tahir about our research on the economic integration of resettled refugees in the U.S., emphasizing a multidimensional approach beyond just employment. (Sponsored by WashU and IASFM20).",
+      "tags": ["Podcast", "Refugee", "Economic Integration"],
       "createAt": "2025-08-25",
       "pageUrl": "https://source.washu.edu/clip/perspectives/?utm_source=newsletter&utm_medium=email&utm_content=Read%20more%20Perspectives%C2%A0%E2%86%92&utm_campaign=Record%208-25-25",
       "category": "Media"
@@ -13,92 +13,52 @@
     {
       "id": 2,
       "imageUrl": "assets/news/nsf-grant.jpg",
-      "name": "Two from Brown School named fellows by WashU’s Center for Race, Ethnicity & Equity",
+      "name": "Two from Brown School named fellows by WashU’s Center for Race, Ethnicity & Equity ($2,000)",
       "description": "Jihye Lee, a PhD student in social work, has been selected as a 2025-2026 Race & Ethnicity Scholar Fellow. This fellowship is awarded annually to three graduate students whose work advances scholarship in race, ethnicity, and equity. Fellows participate in events, workshops, and professional development opportunities, and are encouraged to share their research or creative work with their cohort and center affiliates.",
-      "tags": ["Funding", "NSF", "Community"],
+      "tags": ["Grant", "Center for Race, Ethnicity & Equity"],
       "createAt": "2025-05-08",
       "pageUrl": "https://brownschool.washu.edu/2025/05/two-from-brown-school-named-fellows-by-washus-center-for-race-ethnicity-equity/",
-      "category": "grant"
+      "category": "Grant"
     },
     {
       "id": 3,
       "imageUrl": "assets/news/conference-keynote.jpg",
-      "name": "Keynote Speaker at International Social Work Conference",
-      "description": "Delivered keynote address on 'Digital Inclusion and Mental Health in Immigrant Communities' at the 2023 International Conference on Social Work in Chicago.",
-      "tags": ["Conference", "Keynote", "International"],
-      "createAt": "2023-11-10",
-      "pageUrl": "https://ifsw.org/events/",
-      "category": "media"
+      "name": "Graduate Research Assistant Jihye Lee wins the Second Prize in the Social Science Category at the 2025 30th Annual Graduate Research Symposium",
+      "description": "Jihye Lee, a second-year doctoral student at the Brown School, for winning the Second Prize in the Social Science category at the 2025 30th Annual Graduate Research Symposium at Washington University in St. Louis! Her presentation, “Multidimensional Deprivation Among Newly Resettled Afghans in the U.S.”, highlights the complex dimensions of poverty shaping Afghan refugees’ economic integration in the United States. Jihye’s work draws from our Russell Sage Foundation-funded study on Economic Integration and Poverty Among Newly Resettled Afghans, and we’re thrilled to see her impactful scholarship recognized.",
+      "tags": ["Conference", "Refugee", "Economic Integration"],
+      "createAt": "2025-04-10",
+      "pageUrl": "https://forcedmigration.wustl.edu/graduate-research-assistant-jihye-lee-wins-the-second-prize-in-the-social-science-category-at-the-2025-30th-annual-graduate-research-symposium/",
+      "category": "Conference"
     },
     {
       "id": 4,
       "imageUrl": "assets/news/new-course.jpg",
-      "name": "New Course: Data Science for Social Work",
-      "description": "Launching a new graduate course combining data science methodologies with social work practice for the Spring 2024 semester. Registration is now open.",
-      "tags": ["Teaching", "Data Science", "Course"],
-      "createAt": "2023-10-05",
-      "pageUrl": "https://brownschool.wustl.edu/courses/data-science-social-work",
-      "category": "publication"
+      "name": "Center awards seed grants to projects in human rights, gender and migration ($2,500)",
+      "description": "Awarded 2024 Seed Grant for two doctoral students in Washington University in St. Louis ($2,500), Role: PI (Jihye Lee), Co-Pi (Mitra Naseh, Ph.D.): Quality of Life of Highly Educated Iranian Immigrants and Restrictive Migration Policies.",
+      "tags": ["Grant", "Institute for Public Health"],
+      "createAt": "2024-12-02",
+      "pageUrl": "https://publichealth.wustl.edu/center-awards-seed-grants-to-two-projects-benefitting-marginalized-families/",
+      "category": "Grant"
     },
     {
       "id": 5,
-      "imageUrl": "assets/news/collaboration.jpg",
-      "name": "Research Collaboration with Brown School Health Initiative",
-      "description": "Beginning a new collaborative project examining the impact of social media on mental health outcomes in Asian American youth. The study will involve 500 participants.",
-      "tags": ["Collaboration", "Brown School", "Mental Health"],
-      "createAt": "2023-09-15",
-      "pageUrl": "https://brownschool.wustl.edu/research/",
-      "category": "publication"
+      "imageUrl": "assets/news/conference-keynote.jpg",
+      "name": "Graduate Student Conference Travel Grants ($750)",
+      "description": "Awarded Graduate Student Conference Travel Award in Washington University in St. Louis.",
+      "tags": ["Grant", "Center for Race, Ethnicity & Equity"],
+      "createAt": "2024-10-31",
+      "pageUrl": "https://cre2.wustl.edu/research/funding-opportunities/grants/travelawards/",
+      "category": "Grant"
     },
     {
       "id": 6,
-      "imageUrl": "assets/news/workshop.jpg",
-      "name": "Workshop on Cultural Competency in Digital Health",
-      "description": "Leading a professional development workshop for healthcare providers on implementing culturally responsive digital health interventions.",
-      "tags": ["Workshop", "Cultural Competency", "Healthcare"],
-      "createAt": "2023-08-22",
-      "pageUrl": "https://example.com/workshop",
-      "category": "media"
-    },
-    {
-      "id": 7,
-      "imageUrl": "assets/news/book-chapter.jpg",
-      "name": "New Book Chapter on Immigration Policy and Health",
-      "description": "Contributed a chapter to the upcoming book 'Global Perspectives on Immigration and Health' examining policy frameworks across different countries.",
-      "tags": ["Publication", "Immigration", "Policy"],
-      "createAt": "2023-07-18",
-      "pageUrl": "https://example.com/book",
-      "category": "publication"
-    },
-    {
-      "id": 8,
-      "imageUrl": "assets/news/award.jpg",
-      "name": "Excellence in Teaching Award 2023",
-      "description": "Honored with the Excellence in Teaching Award from Brown School for innovative pedagogical approaches in social work education.",
-      "tags": ["Award", "Teaching", "Excellence"],
-      "createAt": "2023-06-01",
-      "pageUrl": "https://brownschool.wustl.edu/news/teaching-awards",
-      "category": "award"
-    },
-    {
-      "id": 9,
-      "imageUrl": "assets/news/podcast.jpg",
-      "name": "Featured on Social Work Research Podcast",
-      "description": "Discussed research findings on immigrant health disparities and digital intervention strategies on the 'Future of Social Work' podcast series.",
-      "tags": ["Podcast", "Interview", "Research"],
-      "createAt": "2023-05-10",
-      "pageUrl": "https://example.com/podcast",
-      "category": "media"
-    },
-    {
-      "id": 10,
-      "imageUrl": "assets/news/policy-brief.jpg",
-      "name": "Policy Brief: Improving Access to Mental Health Services",
-      "description": "Published policy recommendations for state and federal agencies on enhancing mental health service accessibility for immigrant communities.",
-      "tags": ["Policy", "Mental Health", "Access"],
-      "createAt": "2023-04-03",
-      "pageUrl": "https://example.com/policy-brief",
-      "category": "publication"
+      "imageUrl": "assets/news/collaboration.jpg",
+      "name": "Brown School faculty and students receive Global Pilot Research Grants ($2,500)",
+      "description": "Awarded Global Programs Pilot Research Fund in Washington University in St. Louis ($2,500), Role: PI (Jihye Lee), Co-Pi (Mitra Naseh, Ph.D.): Breaking Barriers: Unraveling the Impact of Financial Aid Policies on Social Mobility for DACA Recipients.",
+      "tags": ["Grant", "Global Impact at the Brown School"],
+      "createAt": "2024-09-06",
+      "pageUrl": "https://globalbrown.wustl.edu/brown-school-faculty-and-students-receive-global-pilot-research-grants/",
+      "category": "Grant"
     }
   ]
 }
