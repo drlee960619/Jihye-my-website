@@ -292,7 +292,7 @@
 }
 
 .publication-text {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.7;
     color: #444;
     margin-bottom: 10px;
@@ -313,7 +313,7 @@
     gap: 5px;
     color: var(--primary-color);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     transition: all 0.3s;
 }
@@ -324,7 +324,7 @@
 }
 
 .publication-entry .pub-link i {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 
