@@ -12,7 +12,7 @@
     },
     {
       "id": 2,
-      "imageUrl": "assets/news/CRE2_Fellowship.jpg",
+      "imageUrl": "assets/news/CRE2.jpg",
       "name": "Two from Brown School named fellows by WashU’s Center for Race, Ethnicity & Equity ($2,000)",
       "description": "Jihye Lee, a PhD student in social work, has been selected as a 2025-2026 Race & Ethnicity Scholar Fellow. This fellowship is awarded annually to three graduate students whose work advances scholarship in race, ethnicity, and equity. Fellows participate in events, workshops, and professional development opportunities, and are encouraged to share their research or creative work with their cohort and center affiliates.",
       "tags": ["Grant", "Center for Race, Ethnicity & Equity"],
@@ -32,7 +32,7 @@
     },
     {
       "id": 4,
-      "imageUrl": "assets/news/CRE2_Fellowship.jpg",
+      "imageUrl": "assets/news/CRE2.jpg",
       "name": "Center awards seed grants to projects in human rights, gender and migration ($2,500)",
       "description": "Awarded 2024 Seed Grant for two doctoral students in Washington University in St. Louis ($2,500), Role: PI (Jihye Lee), Co-Pi (Mitra Naseh, Ph.D.): Quality of Life of Highly Educated Iranian Immigrants and Restrictive Migration Policies.",
       "tags": ["Grant", "Institute for Public Health"],
@@ -52,7 +52,7 @@
     },
     {
       "id": 6,
-      "imageUrl": "assets/news/collaboration.jpg",
+      "imageUrl": "assets/news/CRE2.jpg",
       "name": "Brown School faculty and students receive Global Pilot Research Grants ($2,500)",
       "description": "Awarded Global Programs Pilot Research Fund in Washington University in St. Louis ($2,500), Role: PI (Jihye Lee), Co-Pi (Mitra Naseh, Ph.D.): Breaking Barriers: Unraveling the Impact of Financial Aid Policies on Social Mobility for DACA Recipients.",
       "tags": ["Grant", "Global Impact at the Brown School"],
