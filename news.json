@@ -2,7 +2,7 @@
   "news": [
     {
       "id": 1,
-      "imageUrl": "assets/news/IASFM20.jpg",
+      "imageUrl": "assets/images/news/IASFM20.jpg",
       "name": "Scholar discusses refugee research (IASFM20 podcast)",
       "description": "Featured in a conversation with Dr.Naseh and Akino Tahir about our research on the economic integration of resettled refugees in the U.S., emphasizing a multidimensional approach beyond just employment. (Sponsored by WashU and IASFM20).",
       "tags": ["Podcast", "Refugee", "Economic Integration"],
@@ -12,7 +12,7 @@
     },
     {
       "id": 2,
-      "imageUrl": "assets/news/CRE2.jpg",
+      "imageUrl": "assets/images/news/CRE2.jpg",
       "name": "Two from Brown School named fellows by WashU’s Center for Race, Ethnicity & Equity ($2,000)",
       "description": "Jihye Lee, a PhD student in social work, has been selected as a 2025-2026 Race & Ethnicity Scholar Fellow. This fellowship is awarded annually to three graduate students whose work advances scholarship in race, ethnicity, and equity. Fellows participate in events, workshops, and professional development opportunities, and are encouraged to share their research or creative work with their cohort and center affiliates.",
       "tags": ["Grant", "Center for Race, Ethnicity & Equity"],
@@ -22,7 +22,7 @@
     },
     {
       "id": 3,
-      "imageUrl": "assets/news/Conference.jpg",
+      "imageUrl": "assets/images/news/Conference.jpg",
       "name": "Graduate Research Assistant Jihye Lee wins the Second Prize in the Social Science Category at the 2025 30th Annual Graduate Research Symposium",
       "description": "Jihye Lee, a second-year doctoral student at the Brown School, for winning the Second Prize in the Social Science category at the 2025 30th Annual Graduate Research Symposium at Washington University in St. Louis! Her presentation, “Multidimensional Deprivation Among Newly Resettled Afghans in the U.S.”, highlights the complex dimensions of poverty shaping Afghan refugees’ economic integration in the United States. Jihye’s work draws from our Russell Sage Foundation-funded study on Economic Integration and Poverty Among Newly Resettled Afghans, and we’re thrilled to see her impactful scholarship recognized.",
       "tags": ["Conference", "Refugee", "Economic Integration"],
@@ -32,7 +32,7 @@
     },
     {
       "id": 4,
-      "imageUrl": "assets/news/CRE2.jpg",
+      "imageUrl": "assets/images/news/CRE2.jpg",
       "name": "Center awards seed grants to projects in human rights, gender and migration ($2,500)",
       "description": "Awarded 2024 Seed Grant for two doctoral students in Washington University in St. Louis ($2,500), Role: PI (Jihye Lee), Co-Pi (Mitra Naseh, Ph.D.): Quality of Life of Highly Educated Iranian Immigrants and Restrictive Migration Policies.",
       "tags": ["Grant", "Institute for Public Health"],
@@ -42,7 +42,7 @@
     },
     {
       "id": 5,
-      "imageUrl": "assets/news/conference-keynote.jpg",
+      "imageUrl": "assets/images/news/conference-keynote.jpg",
       "name": "Graduate Student Conference Travel Grants ($750)",
       "description": "Awarded Graduate Student Conference Travel Award in Washington University in St. Louis.",
       "tags": ["Grant", "Center for Race, Ethnicity & Equity"],
@@ -52,7 +52,7 @@
     },
     {
       "id": 6,
-      "imageUrl": "assets/news/CRE2.jpg",
+      "imageUrl": "assets/images/news/CRE2.jpg",
       "name": "Brown School faculty and students receive Global Pilot Research Grants ($2,500)",
       "description": "Awarded Global Programs Pilot Research Fund in Washington University in St. Louis ($2,500), Role: PI (Jihye Lee), Co-Pi (Mitra Naseh, Ph.D.): Breaking Barriers: Unraveling the Impact of Financial Aid Policies on Social Mobility for DACA Recipients.",
       "tags": ["Grant", "Global Impact at the Brown School"],
