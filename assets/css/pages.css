@@ -343,7 +343,7 @@
     color: #fff;
     padding: 8px 20px;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -352,7 +352,7 @@
 
 /* Pedagogy Section */
 .pedagogy-content p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.85;
     color: #555;
     margin-bottom: 20px;
@@ -378,7 +378,7 @@
 }
 
 .pedagogy-item h3 {
-    font-size: 20px;
+    font-size: 16px;
     color: var(--text-color);
     margin-bottom: 12px;
     display: flex;
@@ -392,7 +392,7 @@
 }
 
 .pedagogy-item p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.8;
     color: #666;
     margin: 0;
@@ -440,7 +440,7 @@
 }
 
 .university-info h3 {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--text-color);
     margin-bottom: 15px;
     font-weight: 600;
@@ -455,7 +455,7 @@
 .course-list li {
     padding: 8px 0;
     color: #666;
-    font-size: 20px;
+    font-size: 16px;
     position: relative;
     padding-left: 20px;
 }
@@ -499,7 +499,7 @@
 }
 
 .quote-card p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.8;
     color: #555;
     font-style: italic;
@@ -551,7 +551,7 @@
 }
 
 .resource-card p {
-    font-size: 20px;
+    font-size: 16px;
     color: #666;
 }
 
