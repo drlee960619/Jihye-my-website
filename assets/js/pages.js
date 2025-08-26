@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Load PDF
-        const url = 'assets/cv/jihye-lee-cv.pdf';
+        const url = 'assets/cv/CV.pdf';
         
         pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
             pdfDoc = pdfDoc_;
