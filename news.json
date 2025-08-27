@@ -8,7 +8,7 @@
       "tags": ["Podcast", "Media", "Refugee", "Economic Integration"],
       "createAt": "2025-08-25",
       "pageUrl": "https://source.washu.edu/clip/perspectives/?utm_source=newsletter&utm_medium=email&utm_content=Read%20more%20Perspectives%C2%A0%E2%86%92&utm_campaign=Record%208-25-25",
-      "category": "Media"
+      "category": "media"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "tags": ["Grants", "Center for Race, Ethnicity & Equity"],
       "createAt": "2025-05-08",
       "pageUrl": "https://brownschool.washu.edu/2025/05/two-from-brown-school-named-fellows-by-washus-center-for-race-ethnicity-equity/",
-      "category": "Grants"
+      "category": "grant"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "tags": ["Conference", "Awards", "Refugee", "Economic Integration"],
       "createAt": "2025-04-10",
       "pageUrl": "https://forcedmigration.wustl.edu/graduate-research-assistant-jihye-lee-wins-the-second-prize-in-the-social-science-category-at-the-2025-30th-annual-graduate-research-symposium/",
-      "category": "Awards"
+      "category": "award"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "tags": ["Grants", "Institute for Public Health"],
       "createAt": "2024-12-02",
       "pageUrl": "https://publichealth.wustl.edu/center-awards-seed-grants-to-two-projects-benefitting-marginalized-families/",
-      "category": "Grants"
+      "category": "grant"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "tags": ["Grants", "Center for Race, Ethnicity & Equity"],
       "createAt": "2024-10-31",
       "pageUrl": "https://cre2.wustl.edu/research/funding-opportunities/grants/travelawards/",
-      "category": "Grants"
+      "category": "grant"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "tags": ["Grants", "Global Impact at the Brown School"],
       "createAt": "2024-09-06",
       "pageUrl": "https://globalbrown.wustl.edu/brown-school-faculty-and-students-receive-global-pilot-research-grants/",
-      "category": "Grants"
+      "category": "grant"
     }
   ]
 }
