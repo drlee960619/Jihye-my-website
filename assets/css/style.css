@@ -594,6 +594,12 @@ body {
         display: none;
     }
 
+
+    .responsive-img {
+  max-width: 100%;
+  height: auto;
+    }
+
     /* Mobile Profile Card */
     .mobile-profile-card {
         display: flex;
