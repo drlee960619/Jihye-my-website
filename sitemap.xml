@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jihyelee.org/</loc>
+    <lastmod>2025-08-27</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://jihyelee.org/cv.html</loc>
+    <lastmod>2025-08-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jihyelee.org/research.html</loc>
+    <lastmod>2025-08-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jihyelee.org/teaching.html</loc>
+    <lastmod>2025-08-27</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jihyelee.org/news.html</loc>
+    <lastmod>2025-08-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+</urlset>
