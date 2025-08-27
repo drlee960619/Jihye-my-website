@@ -595,10 +595,12 @@ body {
     }
 
 
-    .responsive-img {
-  max-width: 100%;
-  height: auto;
-    }
+.responsive-img {
+    max-width: 60%; /* 또는 500px */
+    height: auto;
+    display: block;
+    margin: 20px auto; /* 중앙 정렬 */
+}
 
     /* Mobile Profile Card */
     .mobile-profile-card {
