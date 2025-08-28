@@ -594,15 +594,6 @@ body {
         display: none;
     }
 
-
-.center-img {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
-  display: block;
-  margin: 0 auto;   /* 좌우 가운데 정렬 */
-}
-
     /* Mobile Profile Card */
     .mobile-profile-card {
         display: flex;
