@@ -600,7 +600,7 @@ body {
   width: 100%;        /* 모바일에서는 자동 축소 */
   height: auto;
   display: block;
-  margin: 0 auto;     /* 가운데 정렬 */
+  margin: 20px auto;     /* 가운데 정렬 */
 }
 
     /* Mobile Profile Card */
