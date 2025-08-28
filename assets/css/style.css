@@ -595,12 +595,12 @@ body {
     }
 
 
-.research-img {
-  max-width: 450px;   /* 최대 크기 */
-  width: 100%;        /* 모바일에서는 자동 축소 */
+.center-img {
+  width: 100%;
+  max-width: 500px;
   height: auto;
   display: block;
-  margin: 20px auto;     /* 가운데 정렬 */
+  margin: 0 auto;   /* 좌우 가운데 정렬 */
 }
 
     /* Mobile Profile Card */
