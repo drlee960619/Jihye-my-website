@@ -126,11 +126,17 @@ function renderPage(num) {
         }
         
         // Handle resize
-        function handleResize() {
-            if (pdfDoc) {
-                queueRenderPage(pageNum);
-            }
-        }
+function handleResize() {
+    if (pdfDoc) {
+        // 이 부분이 추가되었습니다: 창 크기 변경 시 scale을 재계산합니다.
+        const containerWidth = pdfCanvas.parentElement.clientWidth - 40;
+        const viewport = pdfDoc.getPage(pageNum)._transport.get = (page) => page.getViewport({scale: 1.0}); // Fix for page loading
+        const desiredWidth = Math.min(containerWidth, viewport.width);
+        scale = desiredWidth / viewport.width;
+
+        queueRenderPage(pageNum);
+    }
+}
         
         // Event listeners
         prevPageBtn.addEventListener('click', onPrevPage);
@@ -149,24 +155,29 @@ function renderPage(num) {
             setTimeout(handleResize, 500);
         });
         
-        // Load PDF
-        const url = 'assets/cv/CV.pdf';
-        
-        pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
-            pdfDoc = pdfDoc_;
-            
-            console.log(`PDF loaded with ${pdfDoc.numPages} pages`);
-            
-            // Initial page render
-            renderPage(pageNum);
-            
-        }).catch(function(error) {
-            console.error('Error loading PDF:', error);
-            if (pdfLoading) {
-                pdfLoading.textContent = 'Error loading PDF';
-            }
-        });
+       // Load PDF
+const url = 'assets/cv/CV.pdf';
+
+pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+    pdfDoc = pdfDoc_;
+    
+    console.log(`PDF loaded with ${pdfDoc.numPages} pages`);
+    
+    // 이 부분이 추가되었습니다: PDF 로드 시 화면에 맞게 scale을 계산합니다.
+    const containerWidth = pdfCanvas.parentElement.clientWidth - 40;
+    const viewport = pdfDoc.getPage(pageNum)._transport.get = (page) => page.getViewport({scale: 1.0}); // Fix for page loading
+    const desiredWidth = Math.min(containerWidth, viewport.width);
+    scale = desiredWidth / viewport.width;
+
+    // Initial page render
+    renderPage(pageNum);
+    
+}).catch(function(error) {
+    console.error('Error loading PDF:', error);
+    if (pdfLoading) {
+        pdfLoading.textContent = 'Error loading PDF';
     }
+});
     
     // ===========================
     // Research Page Functionality
