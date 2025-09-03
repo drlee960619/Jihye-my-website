@@ -3,182 +3,180 @@ document.addEventListener('DOMContentLoaded', function() {
     // CV Page Functionality - PDF.js Implementation
     // ===========================
     
-    // PDF Controls 
-    const prevPageBtn = document.getElementById('prevPage');
-    const nextPageBtn = document.getElementById('nextPage');
-    const zoomInBtn = document.getElementById('zoomIn');
-    const zoomOutBtn = document.getElementById('zoomOut');
-    const pageInfo = document.getElementById('pageInfo');
-    const pdfCanvas = document.getElementById('pdf-canvas');
-    const pdfLoading = document.getElementById('pdf-loading');
+    // ===========================
+// CV Page Functionality - PDF.js Implementation
+// ===========================
+
+// PDF Controls 
+const prevPageBtn = document.getElementById('prevPage');
+const nextPageBtn = document.getElementById('nextPage');
+const zoomInBtn = document.getElementById('zoomIn');
+const zoomOutBtn = document.getElementById('zoomOut');
+const pageInfo = document.getElementById('pageInfo');
+const pdfCanvas = document.getElementById('pdf-canvas');
+const pdfLoading = document.getElementById('pdf-loading');
+ 
+if (prevPageBtn && pdfCanvas && window.pdfjsLib) {
+    let pdfDoc = null;
+    let pageNum = 1;
+    let pageRendering = false;
+    let pageNumPending = null;
+    let scale = 1.0;
+    let canvas = pdfCanvas;
+    let ctx = canvas.getContext('2d');
     
-    if (prevPageBtn && pdfCanvas && window.pdfjsLib) {
-        let pdfDoc = null;
-        let pageNum = 1;
-        let pageRendering = false;
-        let pageNumPending = null;
-        let scale = 1.0;
-        let canvas = pdfCanvas;
-        let ctx = canvas.getContext('2d');
-        
-        // Set worker source
-        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
-        
-// Render a page
-function renderPage(num) {
-    pageRendering = true;
+    // Set worker source
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
     
-    // Get page
-    pdfDoc.getPage(num).then(function(page) {
-        // Calculate the viewport using the current 'scale' variable.
-        // NOTE: The code below was removed because it was resetting the scale:
-        // const containerWidth = pdfCanvas.parentElement.clientWidth - 40;
-        // const viewport = page.getViewport({scale: 1.0});
-        // const desiredWidth = Math.min(containerWidth, viewport.width);
-        // scale = desiredWidth / viewport.width;
-        // The scale variable is now only changed by zoomIn/zoomOut buttons and initial load.
+    // Render a page with the current scale
+    function renderPage(num) {
+        pageRendering = true;
         
-        const scaledViewport = page.getViewport({scale: scale});
-        
-        // Prepare canvas using PDF page dimensions
-        canvas.height = scaledViewport.height;
-        canvas.width = scaledViewport.width;
-        
-        // Render PDF page into canvas context
-        const renderContext = {
-            canvasContext: ctx,
-            viewport: scaledViewport
-        };
-        
-        const renderTask = page.render(renderContext);
-        
-        // Wait for rendering to finish
-        renderTask.promise.then(function() {
-            pageRendering = false;
-            if (pageNumPending !== null) {
-                // New page rendering is pending
-                renderPage(pageNumPending);
-                pageNumPending = null;
-            }
-            // Hide loading indicator
-            if (pdfLoading) {
-                pdfLoading.style.display = 'none';
-            }
+        // Get page
+        pdfDoc.getPage(num).then(function(page) {
+            // Use the global 'scale' variable directly
+            const scaledViewport = page.getViewport({scale: scale});
+            
+            // Prepare canvas using PDF page dimensions
+            canvas.height = scaledViewport.height;
+            canvas.width = scaledViewport.width;
+            
+            // Render PDF page into canvas context
+            const renderContext = {
+                canvasContext: ctx,
+                viewport: scaledViewport
+            };
+            
+            const renderTask = page.render(renderContext);
+            
+            // Wait for rendering to finish
+            renderTask.promise.then(function() {
+                pageRendering = false;
+                if (pageNumPending !== null) {
+                    renderPage(pageNumPending);
+                    pageNumPending = null;
+                }
+                // Hide loading indicator
+                if (pdfLoading) {
+                    pdfLoading.style.display = 'none';
+                }
+            });
         });
-    });
-    
-    // Update page info
-    if (pageInfo) {
-        pageInfo.textContent = `Page ${num} of ${pdfDoc.numPages}`;
-    }
-    
-    // Update button states
-    updateButtonStates();
-}
-        // Queue rendering
-        function queueRenderPage(num) {
-            if (pageRendering) {
-                pageNumPending = num;
-            } else {
-                renderPage(num);
-            }
+        
+        // Update page info
+        if (pageInfo) {
+            pageInfo.textContent = `Page ${num} of ${pdfDoc.numPages}`;
         }
         
         // Update button states
-        function updateButtonStates() {
-            if (prevPageBtn) {
-                prevPageBtn.disabled = pageNum <= 1;
-                prevPageBtn.style.opacity = pageNum <= 1 ? '0.3' : '1';
-            }
-            if (nextPageBtn) {
-                nextPageBtn.disabled = pageNum >= pdfDoc.numPages;
-                nextPageBtn.style.opacity = pageNum >= pdfDoc.numPages ? '0.3' : '1';
-            }
+        updateButtonStates();
+    }
+    
+    // Queue rendering
+    function queueRenderPage(num) {
+        if (pageRendering) {
+            pageNumPending = num;
+        } else {
+            renderPage(num);
         }
-        
-        // Go to previous page
-        function onPrevPage() {
-            if (pageNum <= 1) {
-                return;
-            }
-            pageNum--;
-            queueRenderPage(pageNum);
+    }
+    
+    // Update button states
+    function updateButtonStates() {
+        if (prevPageBtn) {
+            prevPageBtn.disabled = pageNum <= 1;
+            prevPageBtn.style.opacity = pageNum <= 1 ? '0.3' : '1';
         }
-        
-        // Go to next page
-        function onNextPage() {
-            if (pageNum >= pdfDoc.numPages) {
-                return;
-            }
-            pageNum++;
-            queueRenderPage(pageNum);
+        if (nextPageBtn) {
+            nextPageBtn.disabled = pageNum >= pdfDoc.numPages;
+            nextPageBtn.style.opacity = pageNum >= pdfDoc.numPages ? '0.3' : '1';
         }
-        
-        // Zoom functions
-        function zoomIn() {
-            scale *= 1.2;
-            queueRenderPage(pageNum);
+    }
+    
+    // Go to previous page
+    function onPrevPage() {
+        if (pageNum <= 1) {
+            return;
         }
-        
-        function zoomOut() {
-            scale *= 0.8;
-            queueRenderPage(pageNum);
-        }
-        
-        // Handle resize
-function handleResize() {
-    if (pdfDoc) {
-        // 이 부분이 추가되었습니다: 창 크기 변경 시 scale을 재계산합니다.
-        const containerWidth = pdfCanvas.parentElement.clientWidth - 40;
-        const viewport = pdfDoc.getPage(pageNum)._transport.get = (page) => page.getViewport({scale: 1.0}); // Fix for page loading
-        const desiredWidth = Math.min(containerWidth, viewport.width);
-        scale = desiredWidth / viewport.width;
-
+        pageNum--;
         queueRenderPage(pageNum);
     }
-}
-        
-        // Event listeners
-        prevPageBtn.addEventListener('click', onPrevPage);
-        nextPageBtn.addEventListener('click', onNextPage);
-        
-        if (zoomInBtn) {
-            zoomInBtn.addEventListener('click', zoomIn);
+    
+    // Go to next page
+    function onNextPage() {
+        if (pageNum >= pdfDoc.numPages) {
+            return;
         }
-        
-        if (zoomOutBtn) {
-            zoomOutBtn.addEventListener('click', zoomOut);
+        pageNum++;
+        queueRenderPage(pageNum);
+    }
+    
+    // Zoom functions
+    function zoomIn() {
+        scale *= 1.2;
+        queueRenderPage(pageNum);
+    }
+    
+    function zoomOut() {
+        scale *= 0.8;
+        queueRenderPage(pageNum);
+    }
+    
+    // Handle resize
+    function handleResize() {
+        if (pdfDoc) {
+            // 창 크기 변경 시 PDF를 다시 화면에 맞게 조정
+            pdfDoc.getPage(pageNum).then(function(page) {
+                const containerWidth = pdfCanvas.parentElement.clientWidth - 40;
+                const viewport = page.getViewport({scale: 1.0});
+                const desiredWidth = Math.min(containerWidth, viewport.width);
+                scale = desiredWidth / viewport.width;
+                queueRenderPage(pageNum);
+            });
         }
+    }
+    
+    // Event listeners
+    prevPageBtn.addEventListener('click', onPrevPage);
+    nextPageBtn.addEventListener('click', onNextPage);
+    
+    if (zoomInBtn) {
+        zoomInBtn.addEventListener('click', zoomIn);
+    }
+    
+    if (zoomOutBtn) {
+        zoomOutBtn.addEventListener('click', zoomOut);
+    }
+    
+    window.addEventListener('resize', handleResize);
+    window.addEventListener('orientationchange', () => {
+        setTimeout(handleResize, 500);
+    });
+    
+    // Load PDF
+    const url = 'assets/cv/CV.pdf';
+    
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+        pdfDoc = pdfDoc_;
         
-        window.addEventListener('resize', handleResize);
-        window.addEventListener('orientationchange', () => {
-            setTimeout(handleResize, 500);
+        console.log(`PDF loaded with ${pdfDoc.numPages} pages`);
+        
+        // 최초 로드 시 PDF를 화면에 맞게 조정하고 렌더링
+        pdfDoc.getPage(pageNum).then(function(page) {
+            const containerWidth = pdfCanvas.parentElement.clientWidth - 40;
+            const viewport = page.getViewport({scale: 1.0});
+            const desiredWidth = Math.min(containerWidth, viewport.width);
+            scale = desiredWidth / viewport.width;
+            renderPage(pageNum);
         });
         
-       // Load PDF
-const url = 'assets/cv/CV.pdf';
-
-pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
-    pdfDoc = pdfDoc_;
-    
-    console.log(`PDF loaded with ${pdfDoc.numPages} pages`);
-    
-    // 이 부분이 추가되었습니다: PDF 로드 시 화면에 맞게 scale을 계산합니다.
-    const containerWidth = pdfCanvas.parentElement.clientWidth - 40;
-    const viewport = pdfDoc.getPage(pageNum)._transport.get = (page) => page.getViewport({scale: 1.0}); // Fix for page loading
-    const desiredWidth = Math.min(containerWidth, viewport.width);
-    scale = desiredWidth / viewport.width;
-
-    // Initial page render
-    renderPage(pageNum);
-    
-}).catch(function(error) {
-    console.error('Error loading PDF:', error);
-    if (pdfLoading) {
-        pdfLoading.textContent = 'Error loading PDF';
-    }
-});
-    
+    }).catch(function(error) {
+        console.error('Error loading PDF:', error);
+        if (pdfLoading) {
+            pdfLoading.textContent = 'Error loading PDF';
+        }
+    });
+}
     // ===========================
     // Research Page Functionality
     // ===========================
