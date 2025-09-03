@@ -65,20 +65,20 @@
       "imageUrl": "assets/images/news/project2.png",
       "name": "Exploring the Role of Social Position and Administrative Barriers in the Multidimensional Economic Integration of Newly Resettled Afghans in St. Louis",
       "description": "This project is funded by the WashU Office of the Vice Chancellor for Research and aims to explore the role of administrative barriers as well as social position in the relationship between initial support and multidimensional economic integration among newly resettled Afghans in St. Louis.",
-      "tags": ["Grants", "the WashU Office of the Vice Chancellor for Research"],
+      "tags": ["Projects", "the WashU Office of the Vice Chancellor for Research"],
       "createAt": "2024-09-01",
       "pageUrl": "https://forcedmigration.wustl.edu/items/exploring-the-role-of-social-position-and-administrative-barriers-in-the-multidimensional-economic-integration-of-newly-resettled-afghans-in-st-louis/",
-      "category": "grant"
+      "category": "project"
     },
     {
       "id": 8,
       "imageUrl": "assets/images/news/project1.png",
       "name": "Economic Integration and Poverty Among the Newly Resettled Afghans: A Pilot Study",
       "description": "This pilot study is funded by the Russell Sage Foundation and aims to explore the economic integration of newly resettled Afghans in St. Louis, MO, and Portland, OR from a multidimensional perspective.",
-      "tags": ["Grants", "the Russell Sage Foundation"],
+      "tags": ["Projects", "the Russell Sage Foundation"],
       "createAt": "2024-08-31",
       "pageUrl": "https://forcedmigration.wustl.edu/items/economic-integration-and-poverty-among-the-newly-resettled-afghans-a-pilot-study/",
-      "category": "grant"
+      "category": "project"
     }
   ]
 }
