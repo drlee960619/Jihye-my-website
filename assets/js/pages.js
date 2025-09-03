@@ -24,61 +24,57 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set worker source
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
         
-        // Render a page
-        function renderPage(num) {
-            pageRendering = true;
-            
-            // Get page
-            pdfDoc.getPage(num).then(function(page) {
-                // Calculate scale based on container width
-                const containerWidth = pdfCanvas.parentElement.clientWidth - 40; // padding
-                const viewport = page.getViewport({scale: 1.0});
-                const desiredWidth = Math.min(containerWidth, viewport.width);
-                scale = desiredWidth / viewport.width;
-                
-                // Adjust for mobile
-                if (window.innerWidth <= 768) {
-                    scale = Math.min(scale, 0.8);
-                }
-                
-                const scaledViewport = page.getViewport({scale: scale});
-                
-                // Prepare canvas using PDF page dimensions
-                canvas.height = scaledViewport.height;
-                canvas.width = scaledViewport.width;
-                
-                // Render PDF page into canvas context
-                const renderContext = {
-                    canvasContext: ctx,
-                    viewport: scaledViewport
-                };
-                
-                const renderTask = page.render(renderContext);
-                
-                // Wait for rendering to finish
-                renderTask.promise.then(function() {
-                    pageRendering = false;
-                    if (pageNumPending !== null) {
-                        // New page rendering is pending
-                        renderPage(pageNumPending);
-                        pageNumPending = null;
-                    }
-                    // Hide loading indicator
-                    if (pdfLoading) {
-                        pdfLoading.style.display = 'none';
-                    }
-                });
-            });
-            
-            // Update page info
-            if (pageInfo) {
-                pageInfo.textContent = `Page ${num} of ${pdfDoc.numPages}`;
-            }
-            
-            // Update button states
-            updateButtonStates();
-        }
+// Render a page
+function renderPage(num) {
+    pageRendering = true;
+    
+    // Get page
+    pdfDoc.getPage(num).then(function(page) {
+        // Calculate the viewport using the current 'scale' variable.
+        // NOTE: The code below was removed because it was resetting the scale:
+        // const containerWidth = pdfCanvas.parentElement.clientWidth - 40;
+        // const viewport = page.getViewport({scale: 1.0});
+        // const desiredWidth = Math.min(containerWidth, viewport.width);
+        // scale = desiredWidth / viewport.width;
+        // The scale variable is now only changed by zoomIn/zoomOut buttons and initial load.
         
+        const scaledViewport = page.getViewport({scale: scale});
+        
+        // Prepare canvas using PDF page dimensions
+        canvas.height = scaledViewport.height;
+        canvas.width = scaledViewport.width;
+        
+        // Render PDF page into canvas context
+        const renderContext = {
+            canvasContext: ctx,
+            viewport: scaledViewport
+        };
+        
+        const renderTask = page.render(renderContext);
+        
+        // Wait for rendering to finish
+        renderTask.promise.then(function() {
+            pageRendering = false;
+            if (pageNumPending !== null) {
+                // New page rendering is pending
+                renderPage(pageNumPending);
+                pageNumPending = null;
+            }
+            // Hide loading indicator
+            if (pdfLoading) {
+                pdfLoading.style.display = 'none';
+            }
+        });
+    });
+    
+    // Update page info
+    if (pageInfo) {
+        pageInfo.textContent = `Page ${num} of ${pdfDoc.numPages}`;
+    }
+    
+    // Update button states
+    updateButtonStates();
+}
         // Queue rendering
         function queueRenderPage(num) {
             if (pageRendering) {
