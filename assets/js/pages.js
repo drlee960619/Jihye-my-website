@@ -207,6 +207,7 @@ if (prevPageBtn && pdfCanvas && window.pdfjsLib) {
     // ===========================
     // Research Page Project Showcase (0904 추가)
     // ===========================
+
     function renderProjectShowcase(projects) {
         const projectShowcaseContainer = document.querySelector('.project-showcase-list');
         if (!projectShowcaseContainer) return;
@@ -262,7 +263,6 @@ if (prevPageBtn && pdfCanvas && window.pdfjsLib) {
                 }
             });
     }
-    
     // ===========================
     // Teaching Page Functionality
     // ===========================
