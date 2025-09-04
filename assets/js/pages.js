@@ -203,6 +203,65 @@ if (prevPageBtn && pdfCanvas && window.pdfjsLib) {
             });
         });
     });
+
+    // ===========================
+    // Research Page Project Showcase (0904 추가)
+    // ===========================
+    function renderProjectShowcase(projects) {
+        const projectShowcaseContainer = document.querySelector('.project-showcase-list');
+        if (!projectShowcaseContainer) return;
+
+        projectShowcaseContainer.innerHTML = ''; // 기존 내용 초기화
+
+        projects.forEach(project => {
+            const tagsHtml = project.tags.map(tag => `<span class="keyword">${tag}</span>`).join('');
+            
+            const projectItemHtml = `
+                <div class="news-item">
+                    <a href="${project.pageUrl}" target="_blank">
+                        <div class="item-img-container">
+                            <img src="${project.imageUrl}" alt="${project.name}" loading="lazy">
+                            <div class="item-tag-lg">PROJECTS</div>
+                        </div>
+                        <div class="item-content">
+                            <div class="item-keywords">
+                                ${tagsHtml}
+                            </div>
+                            <h3 class="item-title">${project.name}</h3>
+                            <p class="item-description">
+                                ${project.description}
+                            </p>
+                            <div class="read-more">Read more <i class="fa-solid fa-arrow-right"></i></div>
+                        </div>
+                    </a>
+                </div>
+            `;
+            projectShowcaseContainer.insertAdjacentHTML('beforeend', projectItemHtml);
+        });
+    }
+
+    // `research.html` 페이지에서만 이 함수를 실행
+    if (document.querySelector('.project-showcase-list')) {
+        fetch('../../news.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                // "project" 카테고리만 필터링하여 최신 2개 항목을 가져옴
+                const projects = data.news.filter(item => item.category === 'project').slice(0, 2);
+                renderProjectShowcase(projects);
+            })
+            .catch(error => {
+                console.error('Error fetching project data:', error);
+                const projectShowcaseContainer = document.querySelector('.project-showcase-list');
+                if (projectShowcaseContainer) {
+                    projectShowcaseContainer.innerHTML = '<p>프로젝트를 불러오는 데 실패했습니다. 잠시 후 다시 시도해주세요.</p>';
+                }
+            });
+    }
     
     // ===========================
     // Teaching Page Functionality
