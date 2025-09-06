@@ -297,7 +297,7 @@ if (prevPageBtn && pdfCanvas && window.pdfjsLib) {
     
     let newsData = [];
     let newsCurrentPage = 1;  // Renamed to avoid conflict with CV page
-    const itemsPerPage = 5;
+    const itemsPerPage = 6;
     let filteredNews = [];
     let currentCategory = 'all';
     let currentSearchQuery = '';
