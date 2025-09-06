@@ -24,31 +24,11 @@
       "id": 3,
       "imageUrl": "assets/images/news/Conference.jpg",
       "name": "Graduate Research Assistant Jihye Lee wins the Second Prize in the Social Science Category at the 2025 30th Annual Graduate Research Symposium",
-      "description": "Jihye Lee, a second-year doctoral student at the Brown School, for winning the Second Prize in the Social Science category at the 2025 30th Annual Graduate Research Symposium at Washington University in St. Louis! Her presentation, “Multidimensional Deprivation Among Newly Resettled Afghans in the U.S.”, highlights the complex dimensions of poverty shaping Afghan refugees’ economic integration in the United States. Jihye’s work draws from our Russell Sage Foundation-funded study on Economic Integration and Poverty Among Newly Resettled Afghans, and we’re thrilled to see her impactful scholarship recognized.",
+      "description": "Jihye Lee, a second-year doctoral student at the Brown School, for winning the Second Prize in the Social Science category at the 2025 30th Annual Graduate Research Symposium at Washington University in St. Louis.",
       "tags": ["Conference", "Awards", "Refugee", "Economic Integration"],
       "createAt": "2025-04-10",
       "pageUrl": "https://forcedmigration.wustl.edu/graduate-research-assistant-jihye-lee-wins-the-second-prize-in-the-social-science-category-at-the-2025-30th-annual-graduate-research-symposium/",
       "category": "award"
-    },
-    {
-      "id": 9,
-      "imageUrl": "assets/images/news/koreanmentoring.png",
-      "name": "1:1 Korean Language and Culture Mentoring for Korean-Americans",
-      "description": "Provide weekly 1:1 Zoom mentoring for Korean-Americans, supporting Korean language acquisition, cultural knowledge, and identity exploration",
-      "tags": ["Community", "Korean-American", "Immigrant"],
-      "createAt": "2025-03-01",
-      "pageUrl": "https://forms.gle/xUt5EdfrjFw5pMc18",
-      "category": "community"
-    },
-    {
-      "id": 9,
-      "imageUrl": "assets/images/news/community1.jpg",
-      "name": "Brown School Students Gain Hands-On Experience Supporting Refugees in St. Louis",
-      "description": "Students in the Practice with Refugees and Immigrants course at the Brown School have the unique opportunity to work directly with newly resettled refugees in St. Louis, thanks to a collaboration with Welcome Neighbor St. Louis. This local nonprofit provides a range of services for new American families, including volunteer pairings with recently resettled refugees.",
-      "tags": ["Community", "Refugee"],
-      "createAt": "2025-03-12",
-      "pageUrl": "https://forcedmigration.wustl.edu/dr-mitra-naseh-publishes-in-depth-analysis-on-afghan-forced-migration-to-iran-with-the-migration-policy-institute/",
-      "category": "community"
     },
     {
       "id": 4,
@@ -99,6 +79,36 @@
       "createAt": "2024-08-31",
       "pageUrl": "https://forcedmigration.wustl.edu/items/economic-integration-and-poverty-among-the-newly-resettled-afghans-a-pilot-study/",
       "category": "project"
+    },
+    {
+      "id": 9,
+      "imageUrl": "assets/images/news/koreanmentoring.png",
+      "name": "1:1 Korean Language and Culture Mentoring for Korean-Americans",
+      "description": "Provide weekly 1:1 Zoom mentoring for Korean-Americans, supporting Korean language acquisition, cultural knowledge, and identity exploration",
+      "tags": ["Community", "Korean-American", "Immigrant"],
+      "createAt": "2025-06-01",
+      "pageUrl": "https://forms.gle/xUt5EdfrjFw5pMc18",
+      "category": "community"
+    },
+    {
+      "id": 10,
+      "imageUrl": "assets/images/news/community1.jpg",
+      "name": "Brown School Students Gain Hands-On Experience Supporting Refugees in St. Louis",
+      "description": "Students in the Practice with Refugees and Immigrants course at the Brown School have the unique opportunity to work directly with newly resettled refugees in St. Louis, thanks to a collaboration with Welcome Neighbor St. Louis. This local nonprofit provides a range of services for new American families, including volunteer pairings with recently resettled refugees.",
+      "tags": ["Community", "Refugee"],
+      "createAt": "2025-03-12",
+      "pageUrl": "https://forcedmigration.wustl.edu/dr-mitra-naseh-publishes-in-depth-analysis-on-afghan-forced-migration-to-iran-with-the-migration-policy-institute/",
+      "category": "community"
+    },
+    {
+      "id": 11,
+      "imageUrl": "assets/images/news/community2.jpg",
+      "name": "Brown School Students Gain Hands-On Experience Supporting Refugees in St. Louis",
+      "description": "Students in the Practice with Refugees and Immigrants course at the Brown School have the unique opportunity to work directly with newly resettled refugees in St. Louis, thanks to a collaboration with Welcome Neighbor St. Louis. This local nonprofit provides a range of services for new American families, including volunteer pairings with recently resettled refugees.",
+      "tags": ["Community", "Refugee"],
+      "createAt": "2024-10-10",
+      "pageUrl": "https://forcedmigration.wustl.edu/dr-mitra-naseh-publishes-in-depth-analysis-on-afghan-forced-migration-to-iran-with-the-migration-policy-institute/",
+      "category": "community"
     }
   ]
 }
