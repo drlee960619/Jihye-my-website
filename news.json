@@ -32,12 +32,22 @@
     },
     {
       "id": 9,
-      "imageUrl": "assets/images/news/koreanmentoring.jpg",
+      "imageUrl": "assets/images/news/koreanmentoring.png",
       "name": "1:1 Korean Language and Culture Mentoring for Korean-Americans",
-      "description": "Provide weekly 1:1 Zoom mentoring for Korean-Americans, supporting Korean language acquisition, cultural knowledge, and identity exploration. ",
+      "description": "Provide weekly 1:1 Zoom mentoring for Korean-Americans, supporting Korean language acquisition, cultural knowledge, and identity exploration",
       "tags": ["Community", "Korean-American", "Immigrant"],
       "createAt": "2025-03-01",
-      "pageUrl": "https://docs.google.com/forms/d/1QiInzfAdYD7GED2BA5xcJWqbmujrQeXzWHVBhA0LxZo/edit",
+      "pageUrl": "https://forms.gle/xUt5EdfrjFw5pMc18",
+      "category": "community"
+    },
+    {
+      "id": 9,
+      "imageUrl": "assets/images/news/community1.jpg",
+      "name": "Brown School Students Gain Hands-On Experience Supporting Refugees in St. Louis",
+      "description": "Students in the Practice with Refugees and Immigrants course at the Brown School have the unique opportunity to work directly with newly resettled refugees in St. Louis, thanks to a collaboration with Welcome Neighbor St. Louis. This local nonprofit provides a range of services for new American families, including volunteer pairings with recently resettled refugees.",
+      "tags": ["Community", "Refugee"],
+      "createAt": "2025-03-12",
+      "pageUrl": "https://forcedmigration.wustl.edu/dr-mitra-naseh-publishes-in-depth-analysis-on-afghan-forced-migration-to-iran-with-the-migration-policy-institute/",
       "category": "community"
     },
     {
