@@ -31,6 +31,16 @@
       "category": "award"
     },
     {
+      "id": 9,
+      "imageUrl": "assets/images/news/koreanmentoring.jpg",
+      "name": "1:1 Korean Language and Culture Mentoring for Korean-Americans",
+      "description": "Provide weekly 1:1 Zoom mentoring for Korean-Americans, supporting Korean language acquisition, cultural knowledge, and identity exploration. ",
+      "tags": ["Community", "Korean-American", "Immigrant"],
+      "createAt": "2025-03-01",
+      "pageUrl": "https://docs.google.com/forms/d/1QiInzfAdYD7GED2BA5xcJWqbmujrQeXzWHVBhA0LxZo/edit",
+      "category": "community"
+    },
+    {
       "id": 4,
       "imageUrl": "assets/images/news/CRE2.jpg",
       "name": "Center awards seed grants to projects in human rights, gender and migration ($2,500)",
