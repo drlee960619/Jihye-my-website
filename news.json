@@ -8,7 +8,7 @@
       "tags": ["Ph.D. Candidate"],
       "createAt": "2025-09-30",
       "pageUrl": "https://brownschool.washu.edu/academics/phd-student/jihye-lee/",
-      "category": "award", "paper"
+      "category": "award"
     },
     {
       "id": 13,
@@ -18,7 +18,7 @@
       "tags": ["Projects", "Papers", "Highly Educated Immigrants"],
       "createAt": "2025-09-17",
       "pageUrl": "https://forcedmigration.wustl.edu/restrictive-u-s-migration-policies-taking-a-toll-on-the-health-and-well-being-of-highly-educated-immigrants/",
-      "category": "project"
+      "category": "project", "Paper"
     },
     {
       "id": 12,
