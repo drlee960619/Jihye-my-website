@@ -23,8 +23,8 @@
     {
       "id": 12,
       "imageUrl": "assets/images/news/IASFM20.jpg",
-      "name": "Scholar discusses refugee research (IASFM20 podcast)",
-      "description": "Featured in a conversation with Dr.Naseh and Akino Tahir about research on the economic integration of resettled refugees in the U.S. (Naseh et al., 2024), emphasizing a multidimensional approach beyond just employment. (Sponsored by WashU and IASFM20).",
+      "name": "Scholar discusses refugee research (IASFM20 podcast) (PI: Mitra Naseh)",
+      "description": "Featured in a conversation with Dr.Naseh and Akino Tahir about research on the economic integration of resettled refugees in the U.S. (PI:Mitra Naseh, Naseh et al., 2024), emphasizing a multidimensional approach beyond just employment. (Sponsored by WashU and IASFM20).",
       "tags": ["Podcast", "Media", "Refugee", "Economic Integration"],
       "createAt": "2025-08-25",
       "pageUrl": "https://source.washu.edu/clip/perspectives/?utm_source=newsletter&utm_medium=email&utm_content=Read%20more%20Perspectives%C2%A0%E2%86%92&utm_campaign=Record%208-25-25",
@@ -125,7 +125,7 @@
       "imageUrl": "assets/images/news/project2.png",
       "name": "Exploring the Role of Social Position and Administrative Barriers in the Multidimensional Economic Integration of Newly Resettled Afghans in St. Louis (PI: Mitra Naseh)",
       "description": "This project is funded by the WashU Office of the Vice Chancellor for Research (PI: Mitra Naseh) and aims to explore the role of administrative barriers as well as social position in the relationship between initial support and multidimensional economic integration among newly resettled Afghans in St. Louis.",
-      "tags": ["Projects", "RA", "the WashU Office of the Vice Chancellor for Research"],
+      "tags": ["Projects", "RA"],
       "createAt": "2024-09-01",
       "pageUrl": "https://forcedmigration.wustl.edu/items/exploring-the-role-of-social-position-and-administrative-barriers-in-the-multidimensional-economic-integration-of-newly-resettled-afghans-in-st-louis/",
       "category": "project"
@@ -135,7 +135,7 @@
       "imageUrl": "assets/images/news/project1.png",
       "name": "Economic Integration and Poverty Among the Newly Resettled Afghans: A Pilot Study (PI: Mitra Naseh)",
       "description": "This pilot study is funded by the Russell Sage Foundation (PI: Mitra Naseh) and aims to explore the economic integration of newly resettled Afghans in St. Louis, MO, and Portland, OR from a multidimensional perspective.",
-      "tags": ["Projects", "RA", "the Russell Sage Foundation"],
+      "tags": ["Projects", "RA"],
       "createAt": "2024-08-31",
       "pageUrl": "https://forcedmigration.wustl.edu/items/economic-integration-and-poverty-among-the-newly-resettled-afghans-a-pilot-study/",
       "category": "project"
