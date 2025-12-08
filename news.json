@@ -1,5 +1,15 @@
 {
   "news": [
+        {
+      "id": 15,
+      "imageUrl": "assets/images/news/profile.jpg",
+      "name": "Khinduka Global Professional Development fund ($1,000)",
+      "description": "Jihye Lee, social work PhD student, received a Global Programs Office professional development grant to attend the “Rethinking Complex Migration: Flows, Frames, and Futures,” in Toronto this April, 2026.",
+      "tags": ["Grants", "Global Impact at the Brown School"],
+      "createAt": "2025-11-21",
+      "pageUrl": "https://globalbrown.wustl.edu/items/global-funding-opportunities/",
+      "category": "grant"
+    },
     {
       "id": 14,
       "imageUrl": "assets/images/news/profile.jpg",
