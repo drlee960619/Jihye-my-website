@@ -1,6 +1,16 @@
 {
   "news": [
-        {
+    {
+      "id": 16,
+      "imageUrl": "assets/images/news/profile2.jpg",
+      "name": "2026 WashU Data Viz Competition (The price of Inclusion: Mapping the cost of diversity in the U.S. higher edu",
+      "description": "Jihye Lee participated in the WashU Data Visualization Competition hosted by the Digital Transformation, Digital Intelligence & Innovation Accelerator. She visualized two datasets examining diversity and cost patterns in U.S. higher education. Through comparative regional mapping and trend visualization, her work highlights spatial and temporal inequalities and demonstrates how data visualization can support accessible interpretation of complex social data.",
+      "tags": ["Projects", "Digital Intelligence & Innovation Accelerator"],
+      "createAt": "2026-02-13",
+      "pageUrl": "https://drive.google.com/file/d/1F_WY7Hiz-fSjV495SHCuzBrcQPwGuFw_/view?usp=sharing",
+      "category": "grant"
+    },
+    {
       "id": 15,
       "imageUrl": "assets/images/news/profile2.jpg",
       "name": "Khinduka Global Professional Development fund ($1,000)",
