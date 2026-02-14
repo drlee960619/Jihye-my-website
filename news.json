@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": 17,
+      "imageUrl": "assets/images/news/profile2.jpg",
+      "name": "New Publication: Health Impacts of Migration and Policy on the Iranian Diaspora",
+      "description": "My first-authored paper "Health Impacts of Migration and Policy on the Iranian Diaspora” was published in Journal of immigrant and minority health.",
+      "tags": ["Projects" "Highly Educated Immigrants"],
+      "createAt": "2026-01-01",
+      "pageUrl": "https://link.springer.com/article/10.1007/s10903-025-01844-1",
+      "category": "project"
+    },
+    {
       "id": 16,
       "imageUrl": "assets/images/news/ID16.png",
       "name": "2026 WashU Data Viz Competition - The price of Inclusion: Mapping the Cost of Diversity in the U.S. Higher Edu",
@@ -15,10 +25,10 @@
       "imageUrl": "assets/images/news/profile2.jpg",
       "name": "Khinduka Global Professional Development fund ($1,000)",
       "description": "Jihye Lee, social work PhD student, received a Global Programs Office professional development grant to attend the “Rethinking Complex Migration: Flows, Frames, and Futures,” in Toronto this April, 2026.",
-      "tags": ["Grants", "Global Impact at the Brown School"],
+      "tags": ["Grants", "Journal of immigrant and minority health"],
       "createAt": "2025-11-21",
       "pageUrl": "https://globalbrown.wustl.edu/items/global-funding-opportunities/",
-      "category": "grant"
+      "category": "paper"
     },
     {
       "id": 14,
