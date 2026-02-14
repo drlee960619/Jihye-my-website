@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": 18,
+      "imageUrl": "assets/images/news/project4.png",
+      "name": "The protecting role of ethnic networks during COVID-19: A pilot study among Afghan refugees in St. Louis (PI: Mitra Naseh, Role: RA)",
+      "description": "This pilot study is funded by the Brown School at WashU in St. Louis, Neidorff Family, and Centene Corporation COVID & Health Disparity Response Fund (PI: Mitra Naseh), and aims to explore the role of ethnic networks and social connectedness in buffering the negative health impacts of COVID-19 among Afghan refugees in St. Louis.",
+      "tags": ["Projects", "RA"],
+      "createAt": "2025-05-10",
+      "pageUrl": "https://forcedmigration.wustl.edu/items/the-protecting-role-of-ethnic-networks-during-covid-19-a-pilot-study-among-afghan-refugees-in-st-louis/",
+      "category": "project"
+    },
+    {
       "id": 17,
       "imageUrl": "assets/images/news/ID16.png",
       "name": "2026 WashU Data Viz Competition - The price of Inclusion: Mapping the Cost of Diversity in the U.S. Higher Edu",
