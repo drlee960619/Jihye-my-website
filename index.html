@@ -252,6 +252,256 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
+
+<script>
+(function() {
+// ── COLORS ────────────────────────────────────────────────────────────────────
+const NC = {
+  center:"#4a0810", area:"#7a0a1e", keyword:"#c8607a",
+  published:"#b83030", review:"#fdeef0", development:"#9a9a9a"
+};
+const NS = {
+  center:"#2a040a", area:"#4a0810", keyword:"#a04060",
+  published:"#8a2020", review:"#d48090", development:"#707070"
+};
+
+// ── AREA NODES ────────────────────────────────────────────────────────────────
+const areas = [
+  { id:"A1", type:"area", label:"Refugee",             r:38, desc:"Research on refugee resettlement, economic integration, and wellbeing — including multiple projects on Afghan and North Korean refugees." },
+  { id:"A2", type:"area", label:"Health",              r:36, desc:"Immigration policy as a social determinant of health — mental health, wellbeing, and health disparities among immigrant populations." },
+  { id:"A3", type:"area", label:"Economic\nIntegration",r:40,desc:"Multidimensional approaches to economic integration and poverty — wage mobility, employment, and material hardship among refugees and immigrants." },
+  { id:"A4", type:"area", label:"Immigrant",           r:38, desc:"Broad focus on immigrant populations — political incorporation, economic hardship, DACA, and policy impacts across diverse immigrant groups." },
+  { id:"A5", type:"area", label:"AI",                  r:34, desc:"AI and technology applications in refugee and immigrant support services, including scoping reviews and ethical implications." },
+  { id:"A6", type:"area", label:"Child\nWelfare",      r:34, desc:"Child maltreatment, social cohesion, adolescent resilience, and family-level predictors of child wellbeing." },
+  { id:"A7", type:"area", label:"LLM",                 r:32, desc:"Large language models and digital platforms — peer support, mutual aid, and computational text analysis in migration contexts." },
+];
+
+// ── KEYWORD NODES ─────────────────────────────────────────────────────────────
+const keywords = [
+  { id:"k5",  type:"keyword", label:"DACA",             r:22, desc:"Liminal legality, policy discourse across administrations, and digital mutual aid among undocumented youth." },
+  { id:"k8",  type:"keyword", label:"COVID-19",         r:22, desc:"Pandemic-era economic disparities, social connectedness, and wellbeing among refugee and immigrant populations." },
+  { id:"k9",  type:"keyword", label:"Highly\nEducated", r:22, desc:"Health and policy impacts on highly educated immigrants and international graduate students under restrictive U.S. policies." },
+  { id:"k10", type:"keyword", label:"MDI",              r:24, desc:"Multidimensional Deprivation Index — a composite measure of poverty across income, housing, employment, and social participation domains." },
+  { id:"k11", type:"keyword", label:"Network\nAnalysis",r:22, desc:"Bibliometric and social network analysis applied to research corpora — DACA scholarship and youth after-school programs." },
+];
+
+// ── PAPER NODES ───────────────────────────────────────────────────────────────
+const papers = [
+  // Published
+  { id:"p1", type:"published", short:"Mobility",
+    title:"From First Jobs to Better Pay: Predicting Refugee Wage Mobility with Machine Learning",
+    authors:"Zeng, Y., Naseh, M., Lee, J. & Bechara, S.", year:2025,
+    journal:"Journal of the Society for Social Work and Research",
+    doi:"https://www.journals.uchicago.edu/toc/jsswr/0/ja",
+    tags:["Refugees","Economic Integration","Machine Learning","Wage Mobility"] },
+  { id:"p2", type:"published", short:"Iranian",
+    title:"Iranian Diaspora Health Studies (2 papers): (1) Health Impacts of Migration and Policy on the Iranian Diaspora · (2) Health Impacts of Restrictive Migration Policies: A Qualitative Study",
+    authors:"Lee, J., Naseh, M. et al. (2025)", year:2025,
+    journal:"Journal of Immigrant and Minority Health",
+    doi:"https://link.springer.com/article/10.1007/s10903-025-01844-1",
+    tags:["Iranian Immigrants","Health Policy","Migration Policy","Mental Health","Highly Educated","Qualitative"] },
+  { id:"p4", type:"published", short:"Child Tax\nCredit",
+    title:"Child Tax Credit Utilization in Immigrant Households: Child Investment and College Funds",
+    authors:"Brugger, L., Bellisle, D., Maag, E., Udani, A., Roll, S., Hamilton, L. & Lee, J.", year:2025,
+    journal:"SN Business & Economics",
+    doi:"https://link.springer.com/article/10.1007/s43546-025-00871-2",
+    tags:["Immigrant Households","Social Policy","Child Tax Credit","Economic Well-being","COVID-19"] },
+  { id:"p5", type:"published", short:"Social\nCohesion",
+    title:"Mediating Role of Social Cohesion between Neighborhood Disorder and Child Maltreatment",
+    authors:"Chung, Y., Maguire-Jack, K., Pei, F., Lee, J. & Chang, Y.", year:2025,
+    journal:"Journal of Family Violence",
+    doi:"https://childmaltreatmentpreventionlab.com/celebrating-yoonzies-latest-publications/",
+    tags:["Neighborhood","Social Cohesion","Child Maltreatment","Quantitative"] },
+  { id:"p6", type:"published", short:"Scoping\nReview",
+    title:"Understanding Economic Integration in Immigrant & Refugee Populations: A Scoping Review",
+    authors:"Naseh, M., Lee, J., Zeng, Y., Nabunya, P., Alvarez, V. & Safi, M.", year:2024,
+    journal:"Economies",
+    doi:"https://www.mdpi.com/2227-7099/12/7/167",
+    tags:["Economic Integration","Scoping Review","Refugees","Measurement"] },
+  { id:"p7", type:"published", short:"Housing",
+    title:"Do Benefits of Homeownership on Mental Health Vary by Race and Poverty Status?",
+    authors:"Chen, J., Jones, D., Lee, J., Yan, Y. et al.", year:2024,
+    journal:"Social Science & Medicine",
+    doi:"https://pubmed.ncbi.nlm.nih.gov/38759384/",
+    tags:["Homeownership","Mental Health","Race","Poverty","Causal Inference","Immigrant"] },
+  { id:"p8", type:"published", short:"Resilience",
+    title:"Family-, School-, and Neighborhood-Level Predictors of Resilience for Maltreated Adolescents",
+    authors:"Chang, Y., Maguire-Jack, K., Yoon, S. & Lee, J.", year:2022,
+    journal:"Children",
+    doi:"https://pubmed.ncbi.nlm.nih.gov/36670552/",
+    tags:["Resilience","Adolescents","Child Welfare","Multilevel"] },
+  { id:"p9", type:"published", short:"Youth",
+    title:"Research Trends in Youth After-school Academy: Keyword Network Analysis",
+    authors:"Lee, J. & Moon, S.", year:2022,
+    journal:"Social Science (KCI)",
+    doi:"https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002870979",
+    tags:["Youth","After-school Programs","Network Analysis","Korea"] },
+  // Under Review — no labels (short:"")
+  { id:"r1",  type:"review", short:"", title:"A Scoping Review of Economic Integration Interventions and Programs for Refugees", authors:"Naseh, M., Qushua, N., Nartey, P., Lee, J. & Binte Razzak, R.", year:2025, journal:"Under Review", doi:null, tags:["Economic Integration","Scoping Review","Refugees","Interventions"] },
+  { id:"r2",  type:"review", short:"", title:"Migration Policies as Social Determinants of Health Among International Graduate Students in the United States", authors:"Da Luz Scherf, E., Naseh, M. & Lee, J.", year:2025, journal:"Under Review", doi:null, tags:["Migration Policy","Health Policy","International Students","Highly Educated"] },
+  { id:"r3",  type:"review", short:"", title:"Disproportionate Economic Hardships of COVID-19 on Immigrant Households", authors:"Ibrahim, H., Brugger, L., Lee, J. & Roll, S.", year:2025, journal:"Under Review", doi:null, tags:["COVID-19","Immigrant Households","Economic Hardship","Social Policy"] },
+  { id:"r4",  type:"review", short:"", title:"Measuring Economic Integration Among Refugees in the U.S. From a Multidimensional Perspective", authors:"Naseh, M., Zeng, Y., Lee, J., Bechara, S. & Potocky, M.", year:2025, journal:"Under Review", doi:null, tags:["Economic Integration","Measurement","Refugees","MDI","ASR Data"] },
+  { id:"r5",  type:"review", short:"", title:"Policy Models of Immigrant Political Incorporation: Conceptualization and Empirical Cases in Asian Developed Economies Using Fuzzy Sets", authors:"Chow, C. & Lee, J.", year:2025, journal:"Under Review", doi:null, tags:["Political Incorporation","Immigration Policy","Fuzzy Sets","Comparative"] },
+  { id:"r6",  type:"review", short:"", title:"Reproducing 'Liminal Legality' in Academic Discourse: A Social Network Analysis of DACA Research Across Presidential Administrations", authors:"Lee, J., Naseh, M., Chen, J., Badiezadeh, S., Zamora Garcia, E. & Chow, C.", year:2025, journal:"Under Review", doi:null, tags:["DACA","Social Network Analysis","Immigration Policy","Bibliometric"] },
+  { id:"r7",  type:"review", short:"", title:"Multidimensional Deprivation and Discrimination Among Newly Resettled Afghans in the U.S.", authors:"Lee, J., Naseh, M., Zeng, Y. & Bechara, S.", year:2025, journal:"Under Review", doi:null, tags:["MDI","Afghan Refugees","Discrimination","Multidimensional Poverty"] },
+  { id:"r8",  type:"review", short:"", title:"Afghan Refugees' Multidimensional Deprivation: Comparative Analysis of St. Louis, Portland, and a National Refugee Sample", authors:"Bechara, S., Naseh, M., Zeng, Y., Lee, J. & Baker, J.", year:2025, journal:"Under Review", doi:null, tags:["MDI","Afghan Refugees","Comparative Analysis","Multidimensional Poverty"] },
+  { id:"r9",  type:"review", short:"", title:"Multidimensional Poverty Among Newly Resettled Refugees in the U.S., Evidence from 2019-2021", authors:"Lee, J., Naseh, M., Zeng, Y. & Bechara, S.", year:2025, journal:"Under Review", doi:null, tags:["MDI","Refugees","ASR Data","Quantitative","Multidimensional Poverty"] },
+  { id:"r10", type:"review", short:"", title:"E-Government Engagement and Subjective Well-Being During the COVID-19 Pandemic: Comparing North Korean Refugees and Native Koreans", authors:"Yoo, N., Lee, J. & Jang, S.", year:2025, journal:"Under Review", doi:null, tags:["E-Government","COVID-19","North Korean Refugees","Wellbeing","Comparative"] },
+  // In Progress — no labels (short:"")
+  { id:"d1", type:"development", short:"", title:"A Typology of Perceived AI Usefulness Across Service Domains: Latent Profile Analysis Comparing North Korean Refugees and Native Koreans", authors:"Yoo, N., Lee, J. & Jang, S.", year:2026, journal:"In Development", doi:null, tags:["AI","North Korean Refugees","Latent Profile Analysis","Typology"] },
+  { id:"d2", type:"development", short:"", title:"Artificial Intelligence (AI) in Refugee and Immigrant Support: A Scoping Review", authors:"Lee, J., Naseh, M., Zeng, Y., Yoo, N. & Bechara, S.", year:2026, journal:"In Development", doi:null, tags:["AI","Technology","Refugees","Scoping Review","Ethics"] },
+  { id:"d3", type:"development", short:"", title:"From Pandemic Exposure to Wellbeing: Social Connectedness and Quality of Life among Afghan Newcomers", authors:"Naseh, M., Badiezadeh, S. & Lee, J.", year:2026, journal:"In Development", doi:null, tags:["COVID-19","Afghan Refugees","Social Connectedness","Quality of Life"] },
+  { id:"d4", type:"development", short:"", title:"Digital Mutual Aid in Precarity: Peer Support Among DACA Recipients on Reddit Across U.S. Administrations", authors:"Yoo, N., Lee, J., Cureton, A. & Chow, C.", year:2026, journal:"In Development", doi:null, tags:["DACA","LLM","Digital Aid","Social Media","Peer Support","Undocumented"] },
+];
+
+const center   = { id:"c0", type:"center", label:"Jihye", r:46 };
+const allNodes = [center, ...areas, ...keywords, ...papers];
+
+const rawLinks = [
+  {s:"c0",t:"A1"},{s:"c0",t:"A2"},{s:"c0",t:"A3"},{s:"c0",t:"A4"},{s:"c0",t:"A5"},{s:"c0",t:"A6"},{s:"c0",t:"A7"},
+  {s:"A1",t:"k8"},{s:"A2",t:"k9"},{s:"A3",t:"k10"},{s:"A4",t:"k5"},{s:"A4",t:"k8"},{s:"A4",t:"k9"},{s:"A4",t:"k11"},{s:"A5",t:"A7"},
+  {s:"A1",t:"p1"},{s:"A1",t:"p6"},{s:"A1",t:"d3"},{s:"A1",t:"d1"},
+  {s:"A2",t:"p2"},{s:"A2",t:"p7"},{s:"A2",t:"r2"},
+  {s:"A3",t:"p1"},{s:"A3",t:"p6"},{s:"k10",t:"p6"},
+  {s:"A4",t:"p4"},{s:"A4",t:"p7"},
+  {s:"A5",t:"d2"},{s:"A5",t:"d1"},{s:"A5",t:"p1"},
+  {s:"A6",t:"p4"},{s:"A6",t:"p5"},{s:"A6",t:"p8"},
+  {s:"A7",t:"d4"},{s:"A7",t:"d1"},
+  {s:"A1",t:"r1"},{s:"A3",t:"r1"},
+  {s:"A4",t:"r2"},{s:"k9",t:"r2"},
+  {s:"A4",t:"r3"},{s:"k8",t:"r3"},
+  {s:"A1",t:"r4"},{s:"A3",t:"r4"},{s:"k10",t:"r4"},
+  {s:"A4",t:"r5"},
+  {s:"k11",t:"r6"},{s:"k5",t:"r6"},
+  {s:"A1",t:"r7"},{s:"k10",t:"r7"},
+  {s:"A1",t:"r8"},{s:"A3",t:"r8"},{s:"k10",t:"r8"},
+  {s:"A1",t:"r9"},{s:"A3",t:"r9"},{s:"k10",t:"r9"},
+  {s:"A1",t:"r10"},{s:"k8",t:"r10"},
+  {s:"k5",t:"d4"},{s:"k8",t:"d3"},{s:"k8",t:"p4"},{s:"k9",t:"p2"},{s:"k11",t:"p9"},
+];
+const allLinks = rawLinks.map(l=>({source:l.s,target:l.t}));
+
+// ── D3 ────────────────────────────────────────────────────────────────────────
+const el = document.getElementById("network-container");
+if (!el) return;
+const W = el.clientWidth || 920, H = el.clientHeight || 660;
+
+allNodes.forEach(d=>{
+  if(d.id==="A6"){d.x=W*0.85;d.y=H*0.4;}
+  if(d.id==="A7"){d.x=W*0.75;d.y=H*0.15;}
+});
+
+const svg = d3.select("#network-container").append("svg").attr("width",W).attr("height",H)
+  .call(d3.zoom().scaleExtent([0.3,4]).on("zoom",e=>g.attr("transform",e.transform)));
+const g = svg.append("g");
+svg.insert("rect","g").attr("width",W).attr("height",H).attr("fill","#ffffff");
+
+const sim = d3.forceSimulation(allNodes)
+  .force("link",d3.forceLink(allLinks).id(d=>d.id).distance(d=>{
+    const s=d.source.type,t=d.target.type;
+    if(s==="center"||t==="center")return 190;
+    if(s==="area"&&t==="area")return 160;
+    if(s==="area"||t==="area")return 130;
+    if(s==="keyword"||t==="keyword")return 100;
+    return 80;
+  }).strength(0.45))
+  .force("charge",d3.forceManyBody().strength(d=>d.type==="center"?-900:d.type==="area"?-550:d.type==="keyword"?-320:-160))
+  .force("center",d3.forceCenter(W/2,H/2))
+  .force("collision",d3.forceCollide(d=>(d.r||22)+20))
+  .force("a6right",d3.forceX(W*0.82).strength(d=>d.id==="A6"?0.1:0))
+  .force("a7top",d3.forceY(H*0.18).strength(d=>d.id==="A7"?0.1:0));
+
+const link = g.append("g").selectAll("line").data(allLinks).join("line").attr("class","rn-link");
+const node = g.append("g").selectAll("g").data(allNodes).join("g")
+  .attr("class",d=>`rn-node ${d.type}-node`)
+  .call(d3.drag()
+    .on("start",(e,d)=>{if(!e.active)sim.alphaTarget(0.3).restart();d.fx=d.x;d.fy=d.y;})
+    .on("drag", (e,d)=>{d.fx=e.x;d.fy=e.y;})
+    .on("end",  (e,d)=>{if(!e.active)sim.alphaTarget(0);d.fx=null;d.fy=null;}));
+
+node.append("circle")
+  .attr("r",d=>{if(d.type==="review")return 14;if(d.type==="development")return 13;return d.r||22;})
+  .attr("fill",d=>NC[d.type]||"#ccc")
+  .attr("fill-opacity",d=>{if(d.type==="center")return 0.92;if(d.type==="area")return 0.78;if(d.type==="keyword")return 0.72;if(d.type==="review")return 0.75;if(d.type==="development")return 0.55;return 0.82;})
+  .attr("stroke",d=>NS[d.type]||"#999")
+  .attr("stroke-width",d=>d.type==="review"?2:1.8);
+
+node.each(function(d){
+  const sel=d3.select(this);
+  const label=d.label||d.short||"";
+  if(!label)return;
+  const isArea=d.type==="area",isKW=d.type==="keyword",isDev=d.type==="development",isCtr=d.type==="center";
+  const fs=isCtr?"18px":isArea?"12px":"9.5px";
+  const fill=(isCtr||isArea)?"#fff":(isKW||isDev)?"#1a1a1a":"#fff";
+  const lines=label.split(/\n/);
+  const add=(txt,dy)=>sel.append("text").attr("dy",dy).attr("fill",fill).attr("font-size",fs).attr("font-weight","700").attr("text-anchor","middle").attr("dominant-baseline","central").attr("pointer-events","none").text(txt);
+  if(lines.length===1){const w=label.split(/\s+/);if(w.length<=2){add(label,"0.1em");}else{const m=Math.ceil(w.length/2);add(w.slice(0,m).join(" "),"-0.62em");add(w.slice(m).join(" "),"0.62em");}}
+  else if(lines.length===2){add(lines[0],"-0.62em");add(lines[1],"0.62em");}
+  else{add(lines[0],"-1.1em");add(lines[1],"0");add(lines[2],"1.1em");}
+});
+
+const tt=document.getElementById("rn-tooltip");
+function tLbl(t){
+  if(t==="area")       return{text:"Research Area",  color:"#7a0a1e"};
+  if(t==="keyword")    return{text:"Keyword",         color:"#a04060"};
+  if(t==="published")  return{text:"Published",       color:"#b83030"};
+  if(t==="review")     return{text:"Under Review",    color:"#c06080"};
+  if(t==="development")return{text:"In Development",  color:"#707070"};
+  return{text:"",color:"#ccc"};
+}
+node.on("mouseover",(event,d)=>{
+  if(d.type==="center")return;
+  const lb=tLbl(d.type);
+  let h=`<div class="rn-tt-type" style="color:${lb.color}">${lb.text}</div>`;
+  if(d.type==="area"||d.type==="keyword"){
+    h+=`<div class="rn-tt-title">${(d.label||"").replace(/\n/g," ")}</div><hr class="rn-tt-divider"><div class="rn-tt-desc">${d.desc}</div>`;
+  } else {
+    h+=`<div class="rn-tt-title">${d.title}</div><div class="rn-tt-authors">${d.authors}</div><div class="rn-tt-journal">${d.journal}${d.year?` · ${d.year}`:""}</div>`;
+    if(d.doi)h+=`<a class="rn-tt-doi" href="${d.doi}" target="_blank" style="pointer-events:auto">🔗 ${d.doi.replace("https://","")}</a>`;
+    h+=`<hr class="rn-tt-divider"><div class="rn-tt-tags">${d.tags.map(t=>`<span class="rn-tt-tag">${t}</span>`).join("")}</div>`;
+  }
+  tt.innerHTML=h; tt.style.opacity="1"; tt.style.pointerEvents=d.doi?"auto":"none";
+  const ci=new Set();
+  allLinks.forEach(l=>{if(l.source.id===d.id)ci.add(l.target.id);if(l.target.id===d.id)ci.add(l.source.id);});
+  link.classed("highlighted",l=>l.source.id===d.id||l.target.id===d.id);
+  link.classed("faded",l=>l.source.id!==d.id&&l.target.id!==d.id);
+  node.classed("faded",n=>n.id!==d.id&&!ci.has(n.id));
+}).on("mousemove",event=>{
+  const r=el.getBoundingClientRect();
+  let x=event.clientX-r.left+18,y=event.clientY-r.top-10;
+  if(x+285>W)x=event.clientX-r.left-290;
+  if(y+220>H)y=event.clientY-r.top-230;
+  tt.style.left=x+"px";tt.style.top=y+"px";
+}).on("mouseout",()=>{
+  tt.style.opacity="0";tt.style.pointerEvents="none";
+  link.classed("highlighted",false).classed("faded",false);
+  node.classed("faded",false);
+});
+
+sim.on("tick",()=>{
+  link.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
+  node.attr("transform",d=>`translate(${d.x},${d.y})`);
+});
+
+document.querySelectorAll(".filter-pill").forEach(pill=>{
+  pill.addEventListener("click",function(){
+    document.querySelectorAll(".filter-pill").forEach(p=>p.classList.remove("active"));
+    this.classList.add("active");
+    const f=this.dataset.filter;
+    node.each(function(d){
+      const show=f==="all"||d.type==="center"||d.type===f||d.type==="area"||(f!=="area"&&d.type==="keyword");
+      d3.select(this).style("opacity",show?"1":"0.07");
+    });
+    link.style("opacity",l=>{
+      if(f==="all")return"0.6";
+      const s=l.source.type,t=l.target.type;
+      return(s===f||t===f||s==="center"||t==="center"||s==="area"||t==="area")?"0.6":"0.04";
+    });
+  });
+});
+})();
+</script>
+                
 </body>
 
 </html>
