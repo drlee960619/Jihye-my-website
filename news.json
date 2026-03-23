@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id":20,
+      "imageUrl": "assets/images/news/talk2.jpeg",
+      "name": "Community Hearing and Feedback Session, Forced Migration Initiative",
+      "description": "The Forced Migration Initiative co-hosted a Community Hearing and Feedback Session in collaboration with the Clark-Fox Policy Institute. The FMI team presented key findings on refugee experiences and well-being in St. Louis, followed by a discussion with community partners to gather feedback and inform future research priorities.",
+      "tags": ["Community", "Papers", "Refugee", "Economic Integration"],
+      "createAt": "2026-04-01",
+      "pageUrl": "https://clarkfoxpolicyinstitute.wustl.edu/community-hearing-and-feedback-session-forced-migration-initiative/",
+      "category": "community" "paper"
+    },
+    {
       "id": 19,
       "imageUrl": "assets/images/news/talk1.png",
       "name": "CRE² Graduate Fellow Workshop: Research Talk - Economic Integration among Refugees in the U.S. as New Americans",
