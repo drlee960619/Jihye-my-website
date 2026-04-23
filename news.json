@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id":21,
+      "imageUrl": "assets/images/news/profile2.jpg",
+      "name": "Selected for the 2026 Summer School on the Economics of Migration at UC Davis Global Migration Center",
+      "description": "Jihye Lee has been accepted to the 2026 Summer School on the Economics of Migration, organized by the UC Davis Global Migration Center. The program will be held in Mexico City and brings together emerging scholars working on migration-related research. This program is supported by the University of California Alianza MX and the Bryan C. Cameron Endowed Chair in International Economics at University of California, Davis.",
+      "tags": ["UC Davis", "Global Migration Center"],
+      "createAt": "2026-07-20",
+      "pageUrl": "https://globalmigration.ucdavis.edu/summer_school3",
+      "category": "grant"
+    },
+    {
       "id":20,
       "imageUrl": "assets/images/news/talk2.jpg",
       "name": "Community Hearing and Feedback Session, Forced Migration Initiative",
