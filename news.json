@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": 22,
+      "imageUrl": "assets/images/news/publication2.png",
+      "name": "New Publication: Multidimensional Poverty and Perceived Discrimination Among Newly Resettled Afghans in the United States",
+      "description": "My first-authored paper <strong>Multidimensional Poverty and Perceived Discrimination Among Newly Resettled Afghans in the United States</strong> was published in <strong>Journal of Immigrant & Refugee Studies</strong>.",
+      "tags": ["Papers", "Refugee", "Economic Integration", "Multidimensional Poverty"],
+      "createAt": "2026-06-03",
+      "pageUrl": "https://www.tandfonline.com/doi/abs/10.1080/15562948.2026.2670689",
+      "category": "paper"
+    },
+    {
       "id":21,
       "imageUrl": "assets/images/news/profile2.jpg",
       "name": "Selected for the 2026 Summer School on the Economics of Migration at UC Davis Global Migration Center",
