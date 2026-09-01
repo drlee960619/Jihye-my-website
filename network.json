@@ -1,0 +1,268 @@
+{
+  "_README": [
+    "이 파일만 고치면 홈페이지 Research Network가 바뀝니다. HTML/JS는 건드릴 필요 없습니다.",
+    "",
+    "논문 하나 = { title, keywords, map, doi } 블록 하나.",
+    "  title    : 논문 제목 (마우스를 올리면 뜹니다)",
+    "  keywords : 그 논문 고유의 키워드. 화면에는 안 나오고 데이터로만 쌓입니다.",
+    "  map      : ★ 선을 그릴 큰 주제. 아래 areas 의 label 중에서 골라 적으면 그 노드와 연결됩니다.",
+    "             Refugee / Immigrant / Economic Integration / Digital Inclusion / AI",
+    "  doi      : 선택. 있으면 마우스를 올렸을 때 클릭해서 논문으로 갈 수 있습니다.",
+    "",
+    "노드 종류는 Research area 와 Paper 두 가지뿐이고, 글자는 Research area 에만 붙습니다.",
+    "palette 의 색상 코드만 바꾸면 전체 색이 한 번에 바뀝니다.",
+    "showKeywordNodes 를 true 로 바꾸면 keywords 도 노드로 나타납니다 (지금은 꺼져 있음)."
+  ],
+  "palette": {
+    "core": "#a51417",
+    "coreStroke": "#7a0e11",
+    "coreText": "#ffffff",
+    "area": "#4a0810",
+    "areaStroke": "#2a040a",
+    "areaText": "#ffffff",
+    "paper": "#c4c4cb",
+    "paperStroke": "#9e9ea7",
+    "paperLabel": "#1a1a1a",
+    "link": "#e6e6ea",
+    "linkHighlight": "#a51417"
+  },
+  "showKeywordNodes": false,
+  "keywordMinPapers": 3,
+  "areas": [
+    {
+      "label": "Refugee",
+      "core": true,
+      "r": 42,
+      "desc": "Refugee economic integration, multidimensional deprivation, and wellbeing — including Afghan, North Korean, and newly resettled refugee populations in the U.S. and Korea."
+    },
+    {
+      "label": "Immigrant",
+      "core": true,
+      "r": 42,
+      "desc": "Immigration policy and its consequences for diverse immigrant populations — DACA recipients, undocumented youth, highly educated immigrants, and immigrant households."
+    },
+    {
+      "label": "Economic Integration",
+      "display": "Economic\nIntegration",
+      "r": 40,
+      "desc": "Multidimensional approaches to economic integration, poverty, and employment among refugees and immigrants — measurement, interventions, and policy."
+    },
+    {
+      "label": "Digital Inclusion",
+      "display": "Digital\nInclusion",
+      "r": 36,
+      "desc": "Digital skill, digitally mediated employment, e-government engagement, and the digital divide as a dimension of migrant economic activity."
+    },
+    {
+      "label": "AI",
+      "r": 34,
+      "desc": "Predictive and algorithmic AI in refugee and immigration services, machine learning applications, and perceived AI usefulness across service domains."
+    }
+  ],
+  "areaLinks": [
+    [
+      "Refugee",
+      "Immigrant"
+    ],
+    [
+      "Refugee",
+      "Economic Integration"
+    ],
+    [
+      "Immigrant",
+      "Economic Integration"
+    ],
+    [
+      "Economic Integration",
+      "Digital Inclusion"
+    ],
+    [
+      "Digital Inclusion",
+      "AI"
+    ],
+    [
+      "Refugee",
+      "AI"
+    ]
+  ],
+  "papers": [
+    {
+      "title": "Multidimensional Deprivation and Perceived Discrimination Among Newly Resettled Afghans in the U.S.",
+      "keywords": [
+        "MDI",
+        "Afghan Refugees",
+        "Discrimination"
+      ],
+      "map": [
+        "Refugee",
+        "Economic Integration"
+      ],
+      "doi": "https://doi.org/10.1080/15562948.2026.2670689"
+    },
+    {
+      "title": "E-Government Engagement and Subjective Well-Being During the COVID-19 Pandemic: Comparing North Korean Refugees and Native Koreans",
+      "keywords": [
+        "COVID-19",
+        "North Korean Refugees",
+        "Digital Divide",
+        "E-Government",
+        "Korea"
+      ],
+      "map": [
+        "Refugee",
+        "Digital Inclusion"
+      ],
+      "doi": "https://doi.org/10.1080/1369183X.2026.2706353"
+    },
+    {
+      "title": "From First Jobs to Better Pay: Predicting Refugee Wage Mobility with Machine Learning",
+      "keywords": [
+        "Machine Learning",
+        "ASR Data",
+        "Wage Mobility"
+      ],
+      "map": [
+        "Refugee",
+        "Economic Integration",
+        "AI"
+      ],
+      "doi": "https://doi.org/10.1086/740324"
+    },
+    {
+      "title": "Afghan Refugees' Multidimensional Deprivation: Comparative Analysis of St. Louis, Portland, and a National Refugee Sample",
+      "keywords": [
+        "MDI",
+        "Afghan Refugees"
+      ],
+      "map": [
+        "Refugee",
+        "Economic Integration"
+      ],
+      "doi": "https://doi.org/10.1086/742826"
+    },
+    {
+      "title": "Adaptation and Initial Validation of the U.S. Census Multidimensional Deprivation Index for Resettled Afghans (Working Paper No. 01)",
+      "keywords": [
+        "MDI",
+        "Afghan Refugees",
+        "Measurement"
+      ],
+      "map": [
+        "Refugee",
+        "Economic Integration"
+      ],
+      "doi": "https://doi.org/10.7936/f4tn-p468"
+    },
+    {
+      "title": "A Scoping Review of Economic Integration Interventions and Programs for Refugees",
+      "keywords": [
+        "Scoping Review",
+        "Interventions"
+      ],
+      "map": [
+        "Refugee",
+        "Economic Integration"
+      ],
+      "doi": "https://doi.org/10.1057/s41599-026-07331-8"
+    },
+    {
+      "title": "Disproportionate Economic Hardships of COVID-19 on Immigrant Households",
+      "keywords": [
+        "COVID-19",
+        "Economic Hardship",
+        "Immigrant Households"
+      ],
+      "map": [
+        "Immigrant",
+        "Economic Integration"
+      ],
+      "doi": "https://doi.org/10.1016/j.childyouth.2026.109185"
+    },
+    {
+      "title": "Health Impacts of Migration and Policy on the Iranian Diaspora",
+      "keywords": [
+        "Highly Educated",
+        "Migration Policy",
+        "Mental Health"
+      ],
+      "map": [
+        "Immigrant"
+      ],
+      "doi": "https://doi.org/10.1007/s10903-025-01844-1"
+    },
+    {
+      "title": "Migration Policies as Social Determinants of Health Among International Graduate Students in the United States",
+      "keywords": [
+        "Highly Educated",
+        "Migration Policy",
+        "International Students"
+      ],
+      "map": [
+        "Immigrant"
+      ],
+      "doi": "https://doi.org/10.1007/s10903-026-01948-2"
+    },
+    {
+      "title": "Health Impacts of Restrictive Migration Policies: A Qualitative Study of Highly Educated Iranian Immigrants and International Students in the U.S.",
+      "keywords": [
+        "Highly Educated",
+        "Migration Policy",
+        "Qualitative"
+      ],
+      "map": [
+        "Immigrant"
+      ],
+      "doi": "https://doi.org/10.1007/s10903-025-01760-4"
+    },
+    {
+      "title": "Child Tax Credit Utilization in Immigrant Households: A Focus on Child Investment and College Funds",
+      "keywords": [
+        "COVID-19",
+        "Social Policy",
+        "Immigrant Households"
+      ],
+      "map": [
+        "Immigrant",
+        "Economic Integration"
+      ],
+      "doi": "https://doi.org/10.1007/s43546-025-00871-2"
+    },
+    {
+      "title": "Understanding Economic Integration in Immigrant and Refugee Populations: A Scoping Review of Concepts and Metrics in the United States",
+      "keywords": [
+        "Scoping Review",
+        "Measurement"
+      ],
+      "map": [
+        "Refugee",
+        "Economic Integration",
+        "Immigrant"
+      ],
+      "doi": "https://doi.org/10.3390/economies12070167"
+    },
+    {
+      "title": "Do the Benefits of Homeownership on Mental Health Vary by Race and Poverty Status? An Application of Doubly Robust Estimation for Causal Inference",
+      "keywords": [
+        "Homeownership",
+        "Mental Health",
+        "Causal Inference"
+      ],
+      "map": [
+        "Economic Integration"
+      ],
+      "doi": "https://doi.org/10.1016/j.socscimed.2024.116958"
+    },
+    {
+      "title": "What Drives Refugees' High Poverty in the Early Years After U.S. Resettlement?",
+      "keywords": [
+        "MDI",
+        "ASR Data",
+        "Policy Brief"
+      ],
+      "map": [
+        "Refugee",
+        "Economic Integration"
+      ]
+    }
+  ]
+}
