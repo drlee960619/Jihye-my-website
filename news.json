@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id":23,
+      "imageUrl": "assets/images/news/brief1.png",
+      "name": "What Drives Refugees' High Poverty in the Early Years after U.S. Resettlement?",
+      "description": "Excited to see this work published by <strong>the Migration Policy Institute</strong> for a broader policy audience! Thank you Mitra Naseh for the opportunity to contribute to this work alongside Saria Bechara",
+      "tags": ["Refugee", "Economic Integration", "Migration Policy Brief"],
+      "createAt": "2026-08-18",
+      "pageUrl": "https://www.migrationpolicy.org/journal/feature/refugees-poverty-resettlement-us",
+      "category": "media"
+    },
+    {
       "id": 22,
       "imageUrl": "assets/images/news/publication2.png",
       "name": "New Publication: Multidimensional Poverty and Perceived Discrimination Among Newly Resettled Afghans in the United States",
