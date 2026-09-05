@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id":24,
+      "imageUrl": "assets/images/news/travel1.png",
+      "name": "Received the 2026 University of Michigan Institute for Social Research Travel Award",
+      "description": "Jihye Lee was selected as one of 35 early-career scholars to receive a travel award for the University of Michigan Institute for Social Research’s 2026 Annual Symposium on Complexity in the Social World.",
+      "tags": ["University of Michigan", "Institute for Social Research", "Travel Award"],
+      "createAt": "2026-09-05",
+      "pageUrl": "https://isr.umich.edu/news-events/events/annual-symposium-on-complexity-in-the-social-world/",
+      "category": "award"
+    },
+    {
       "id":23,
       "imageUrl": "assets/images/news/brief1.png",
       "name": "What Drives Refugees' High Poverty in the Early Years after U.S. Resettlement?",
