@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id":27,
+      "imageUrl": "assets/images/news/media1.png",
+      "name": "WashU Expert: Why are refugees with jobs still living in poverty?",
+      "description": "WashU’s The Source featured Dr. Mitra Naseh’s insights on why employment does not always translate into economic stability for newly resettled refugees. The story also mentions Jihye Lee and Saria Bechara as co-authors of the Migration Policy Institute article discussed in the feature.",
+      "tags": ["WashU", "The Source", "Newsroom"],
+      "createAt": "2026-09-11",
+      "pageUrl": "https://source.washu.edu/2026/09/washu-expert-why-are-refugees-with-jobs-still-living-in-poverty/?utm_source=newsletter&utm_medium=email&utm_content=Why%20are%20refugees%20with%20jobs%20still%20living%20in%20poverty%3F&utm_campaign=Record%209-11-26",
+      "category": "media"
+    },
+    {
       "id":26,
       "imageUrl": "assets/images/news/profile2.jpg",
       "name": "Featured in the Global Programs Summer 2026 Newsletter: AI and Refugee Services",
