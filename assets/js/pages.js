@@ -129,7 +129,7 @@ if (prevPageBtn && pdfCanvas && window.pdfjsLib) {
             pdfDoc.getPage(pageNum).then(function(page) {
                 const containerWidth = pdfCanvas.parentElement.clientWidth - 40;
                 const viewport = page.getViewport({scale: 1.0});
-                const desiredWidth = Math.min(containerWidth, viewport.width);
+                const desiredWidth = containerWidth;
                 scale = desiredWidth / viewport.width;
                 queueRenderPage(pageNum);
             });
@@ -165,7 +165,7 @@ if (prevPageBtn && pdfCanvas && window.pdfjsLib) {
         pdfDoc.getPage(pageNum).then(function(page) {
             const containerWidth = pdfCanvas.parentElement.clientWidth - 40;
             const viewport = page.getViewport({scale: 1.0});
-            const desiredWidth = Math.min(containerWidth, viewport.width);
+            const desiredWidth = containerWidth;
             scale = desiredWidth / viewport.width;
             renderPage(pageNum);
         });
