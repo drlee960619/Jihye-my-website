@@ -912,3 +912,46 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Welcome header: title + compact profile links */
+.welcome-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px 16px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+}
+.welcome-head h1 {
+    margin: 0;
+    padding: 0;
+    border-bottom: none;
+}
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    font-size: 14px;
+}
+.profile-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    border-bottom: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.3s;
+}
+.profile-links a i { color: var(--primary-color); font-size: 15px; }
+.profile-links a:hover { color: var(--primary-color); border-bottom: none; }
+
+/* Research figure */
+.research-figure { margin: 8px 0 28px; }
+.research-figure svg { width: 100%; height: auto; display: block; }
+
+@media (max-width: 768px) {
+    .welcome-head { justify-content: center; text-align: center; }
+    .profile-links { justify-content: center; }
+}
