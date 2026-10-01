@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id":28,
+      "imageUrl": "assets/images/profile3.jpg",
+      "name": "Selected for the Clark-Fox Graduate Policy Scholars Program, 2026–2027",
+      "description": "Selected as a <strong>Scholar-in-Training for WashU-wide interdisciplinary training in policy practice and social justice</strong> across graduate and professional schools.",
+      "tags": ["WashU", "Clark-Fox Policy Institute", "Graduate Policy Scholars"],
+      "createAt": "2026-09-24",
+      "pageUrl": "https://clarkfoxpolicyinstitute.wustl.edu/home/student-opportunities/graduate-policy-scholars/",
+      "category": "award"
+    },
+    {
       "id":27,
       "imageUrl": "assets/images/news/media1.png",
       "name": "WashU Expert: Why are refugees with jobs still living in poverty?",
