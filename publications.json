@@ -1,5 +1,5 @@
 {
-  "_howto": "Add one block per paper. status: 'published' or 'under-review'. note (optional, under review): e.g. 'R&R'. categories: pick from the 'categories' list below. The page sorts by year automatically. The policy brief is not here — it is a card in research.html.",
+  "_howto": "Add one block per paper. status: 'published' or 'under-review'. type (optional): 'Policy Brief' shows a badge. note (optional, under review): e.g. 'R&R'. categories: pick from the 'categories' list below. The page sorts by year; within a year, array order is kept.",
   "categories": [
     "Economic Integration",
     "Poverty",
@@ -8,6 +8,20 @@
     "Child & Family Welfare"
   ],
   "papers": [
+    {
+      "status": "published",
+      "type": "Policy Brief",
+      "year": 2026,
+      "title": "What Drives Refugees’ High Poverty in the Early Years after U.S. Resettlement?",
+      "authors": "Naseh, M., Lee, J., & Bechara, S.",
+      "venue": "Migration Policy Institute",
+      "url": "https://www.migrationpolicy.org/journal/feature/refugees-poverty-resettlement-us",
+      "categories": [
+        "Poverty",
+        "Economic Integration",
+        "Immigration Policy"
+      ]
+    },
     {
       "status": "published",
       "year": 2026,
