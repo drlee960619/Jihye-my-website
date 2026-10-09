@@ -1,7 +1,7 @@
 /* ============================================================================
    My Research Network — auto-built from network.json
    ----------------------------------------------------------------------------
-   이 파일은 수정할 필요가 없습니다. 논문 추가/수정은 network.json 에서만 하세요.
+   이 파일은 수정할 필요가 없습니다. 논문·주제는 publications.json 에서, 색상은 network.json 에서 바꿉니다.
    - 연결선(links)은 각 논문의 areas / keywords 값에서 자동 생성됩니다.
    - 키워드 노드는 같은 키워드가 keywordMinPapers 편 이상 쌓이면 자동 생성됩니다.
    - 노드는 Research area 와 Paper 두 종류뿐이고, 글자는 Research area 에만 붙습니다.
@@ -24,9 +24,25 @@
   var el = document.getElementById("network-container");
   if (!el || typeof d3 === "undefined") return;
 
-  fetch("network.json", { cache: "no-cache" })
-    .then(function (r) { if (!r.ok) throw new Error("network.json " + r.status); return r.json(); })
-    .then(build)
+  // Styling comes from network.json; topics and papers come from publications.json,
+  // the same file the Research page uses, so the map never drifts from the list.
+  Promise.all([
+    fetch("network.json", { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error("network.json " + r.status); return r.json(); }),
+    fetch("publications.json", { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error("publications.json " + r.status); return r.json(); })
+  ])
+    .then(function (res) {
+      var cfg = res[0], pubs = res[1];
+      var pillars = pubs.pillars || [];
+      var order = pillars.concat((pubs.categories || []).filter(function (c) { return pillars.indexOf(c) < 0; }));
+      cfg.areas = order.map(function (c) {
+        var core = pillars.indexOf(c) >= 0;
+        return { label: c, core: core, r: core ? 44 : 30, desc: (core ? "Core research area" : "Related research area") };
+      });
+      cfg.papers = (pubs.papers || []).map(function (q) {
+        return { title: q.title, map: q.categories || [], doi: q.url || null, status: q.status };
+      });
+      build(cfg);
+    })
     .catch(function (err) {
       console.error("[Research Network]", err);
       el.innerHTML = '<div style="padding:40px;text-align:center;color:#7a5060;font-family:Segoe UI,sans-serif;font-size:.85rem">' +
@@ -73,7 +89,7 @@
       return {
         id: "P" + i, type: "paper", display: "",
         title: p.title, doi: p.doi || null,
-        map: p.map || [], keywords: p.keywords || [], r: R_PAPER
+        map: p.map || [], keywords: p.keywords || [], r: R_PAPER, ur: p.status === "under-review"
       };
     });
 
@@ -191,14 +207,15 @@
         .on("end", function (e, d) { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; }));
 
     function isArea(d) { return d.type === "area"; }
-    function fillOf(d)   { return isArea(d) ? (d.core ? C_CORE : C_AREA) : C_KW; }
+    function fillOf(d)   { return isArea(d) ? (d.core ? C_CORE : C_AREA) : (d.ur ? "#ffffff" : C_KW); }
     function strokeOf(d) { return isArea(d) ? (d.core ? S_CORE : S_AREA) : S_KW; }
     function opOf(d)     { return isArea(d) ? (d.core ? 0.92 : 0.85) : 0.75; }
 
     node.append("circle")
       .attr("r", function (d) { return d.r || 20; })
       .attr("fill", fillOf).attr("fill-opacity", opOf)
-      .attr("stroke", strokeOf).attr("stroke-width", 1.8);
+      .attr("stroke", strokeOf).attr("stroke-width", 1.8)
+      .attr("stroke-dasharray", function (d) { return d.ur ? "3 2.5" : null; });
 
     // 원 안에 들어가도록 줄바꿈 + 글자 크기를 자동 조정
     function fitLines(label, radius, baseSize) {
@@ -251,7 +268,7 @@
 
     node.on("mouseover", function (event, d) {
       if (!tt) return;
-      var lb = typeLabel(d.type);
+      var lb = typeLabel(d.type); if (d.ur) lb = { text: "Under review", color: P.paperLabel };
       var h = '<div class="rn-tt-type" style="color:' + lb.color + '">' + esc(lb.text) + "</div>";
       if (d.type === "area" || d.type === "keyword") {
         h += '<div class="rn-tt-title">' + esc((d.name || d.display || "").replace(/\n/g, " ")) + "</div>" +

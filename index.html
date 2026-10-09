@@ -58,7 +58,11 @@
   .rn-node:hover circle{ filter: brightness(1.1) drop-shadow(0 2px 9px rgba(0,0,0,0.35)); }
   .rn-node.faded       { opacity: 0.1; }
   .rn-node text        { font-family: 'Segoe UI', sans-serif; pointer-events: none; text-anchor: middle; dominant-baseline: central; }
-  .rn-zoom-hint        { position: absolute; bottom: 10px; right: 12px; font-family: 'Segoe UI', sans-serif; font-size: 0.69rem; color: #b0b0b0; pointer-events: none; }
+  .rn-foot { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 6px 16px; margin-top: 8px; font-size: 0.8rem; color: #999; }
+  .rn-legend { display: inline-flex; align-items: center; gap: 6px; }
+  .rn-key { display: inline-block; width: 11px; height: 11px; border-radius: 50%; }
+  .rn-key--pub { background: #c4c4cb; border: 1.5px solid #9e9ea7; }
+  .rn-key--ur  { background: #fff; border: 1.5px dashed #9e9ea7; margin-left: 10px; }
   @media (max-width: 768px) {
     #network-container { height: 440px; }
   }
@@ -205,7 +209,10 @@
   <h2 class="network-title">My Research Network</h2>
   <div id="network-container">
     <div class="rn-tooltip" id="rn-tooltip"></div>
-    <div class="rn-zoom-hint">hover a node · drag to rearrange · scroll to zoom</div>
+  </div>
+  <div class="rn-foot">
+    <span class="rn-legend"><i class="rn-key rn-key--pub"></i>published <i class="rn-key rn-key--ur"></i>under review</span>
+    <span class="rn-hint">hover a node · drag to rearrange · scroll to zoom</span>
   </div>
 </section>
 <!-- ══ END RESEARCH NETWORK ══ -->
