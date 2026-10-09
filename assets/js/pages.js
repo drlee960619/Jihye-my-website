@@ -379,10 +379,11 @@ if (prevPageBtn && pdfCanvas && window.pdfjsLib) {
     // Get category display name
     function getCategoryDisplayName(category) {
         const categoryMap = {
-            'publication': 'Publication',
-            'grant': 'Grant',
+            'research': 'Research',
+            'talks': 'Talk',
+            'awards': 'Award & Grant',
             'media': 'Media',
-            'award': 'Award'
+            'community': 'Community'
         };
         return categoryMap[category] || category.charAt(0).toUpperCase() + category.slice(1);
     }

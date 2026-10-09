@@ -12,7 +12,7 @@
       ],
       "createAt": "2026-09-24",
       "pageUrl": "https://clarkfoxpolicyinstitute.wustl.edu/home/student-opportunities/graduate-policy-scholars/",
-      "category": "award"
+      "category": "awards"
     },
     {
       "id": 27,
@@ -53,7 +53,7 @@
       ],
       "createAt": "2026-09-05",
       "pageUrl": "https://isr.umich.edu/news-events/events/annual-symposium-on-complexity-in-the-social-world/",
-      "category": "award"
+      "category": "awards"
     },
     {
       "id": 24,
@@ -66,7 +66,7 @@
       ],
       "createAt": "2026-09-01",
       "pageUrl": "https://www.torontomu.ca/global-migration-institute/opportunities/winter-school/",
-      "category": "award"
+      "category": "awards"
     },
     {
       "id": 23,
@@ -80,7 +80,7 @@
       ],
       "createAt": "2026-08-18",
       "pageUrl": "https://www.migrationpolicy.org/journal/feature/refugees-poverty-resettlement-us",
-      "category": "media"
+      "category": "research"
     },
     {
       "id": 22,
@@ -88,14 +88,13 @@
       "name": "New Publication: Multidimensional Poverty and Perceived Discrimination Among Newly Resettled Afghans in the United States",
       "description": "My first-authored paper <strong>Multidimensional Poverty and Perceived Discrimination Among Newly Resettled Afghans in the United States</strong> was published in <strong>Journal of Immigrant & Refugee Studies</strong>.",
       "tags": [
-        "Papers",
         "Refugee",
         "Economic Integration",
         "Multidimensional Poverty"
       ],
       "createAt": "2026-06-03",
       "pageUrl": "https://www.tandfonline.com/doi/abs/10.1080/15562948.2026.2670689",
-      "category": "paper"
+      "category": "research"
     },
     {
       "id": 21,
@@ -108,7 +107,7 @@
       ],
       "createAt": "2026-07-20",
       "pageUrl": "https://globalmigration.ucdavis.edu/summer_school3",
-      "category": "award"
+      "category": "awards"
     },
     {
       "id": 20,
@@ -116,14 +115,12 @@
       "name": "Community Hearing and Feedback Session, Forced Migration Initiative",
       "description": "The Forced Migration Initiative co-hosted a Community Hearing and Feedback Session in collaboration with <strong>the Clark-Fox Policy Institute</strong>. The FMI team presented key findings on refugee experiences and well-being in St. Louis, followed by a discussion with community partners to gather feedback and inform future research priorities.",
       "tags": [
-        "Community",
-        "Papers",
         "Refugee",
         "Economic Integration"
       ],
       "createAt": "2026-04-01",
       "pageUrl": "https://clarkfoxpolicyinstitute.wustl.edu/community-hearing-and-feedback-session-forced-migration-initiative/",
-      "category": "community"
+      "category": "talks"
     },
     {
       "id": 19,
@@ -131,13 +128,12 @@
       "name": "CRE² Graduate Fellow Workshop: Research Talk - Economic Integration among Refugees in the U.S. as New Americans",
       "description": "Jihye Lee, CRE² Graduate Fellow and Ph.D. candidate at the Brown School, presents research examining economic integration among new Americans in the U.S. using a multidimensional poverty approach. The talk explores overlapping challenges faced by newly resettled refugees in St. Louis, Missouri, and at the national level.",
       "tags": [
-        "Papers",
         "Refugee",
         "Economic Integration"
       ],
       "createAt": "2026-03-04",
       "pageUrl": "https://cre2.wustl.edu/people/jihye-lee/",
-      "category": "paper"
+      "category": "talks"
     },
     {
       "id": 18,
@@ -150,7 +146,7 @@
       ],
       "createAt": "2025-05-10",
       "pageUrl": "https://forcedmigration.wustl.edu/items/the-protecting-role-of-ethnic-networks-during-covid-19-a-pilot-study-among-afghan-refugees-in-st-louis/",
-      "category": "project"
+      "category": "research"
     },
     {
       "id": 17,
@@ -162,7 +158,7 @@
       ],
       "createAt": "2026-02-13",
       "pageUrl": "https://drive.google.com/file/d/1F_WY7Hiz-fSjV495SHCuzBrcQPwGuFw_/view?usp=sharing",
-      "category": "project"
+      "category": "research"
     },
     {
       "id": 16,
@@ -170,12 +166,11 @@
       "name": "New Publication: Health Impacts of Migration and Policy on the Iranian Diaspora",
       "description": "My first-authored paper <strong>Health Impacts of Migration and Policy on the Iranian Diaspora</strong> was published in <strong>Journal of immigrant and minority health</strong>.",
       "tags": [
-        "Papers",
         "Highly Educated Immigrants"
       ],
       "createAt": "2026-01-02",
       "pageUrl": "https://link.springer.com/article/10.1007/s10903-025-01844-1",
-      "category": "paper"
+      "category": "research"
     },
     {
       "id": 15,
@@ -187,7 +182,7 @@
       ],
       "createAt": "2025-11-21",
       "pageUrl": "https://globalbrown.wustl.edu/items/global-funding-opportunities/",
-      "category": "grant"
+      "category": "awards"
     },
     {
       "id": 14,
@@ -199,7 +194,7 @@
       ],
       "createAt": "2025-09-30",
       "pageUrl": "https://brownschool.washu.edu/academics/phd-student/jihye-lee/",
-      "category": "award"
+      "category": "awards"
     },
     {
       "id": 13,
@@ -213,7 +208,7 @@
       ],
       "createAt": "2025-09-17",
       "pageUrl": "https://forcedmigration.wustl.edu/restrictive-u-s-migration-policies-taking-a-toll-on-the-health-and-well-being-of-highly-educated-immigrants/",
-      "category": "project"
+      "category": "research"
     },
     {
       "id": 12,
@@ -222,7 +217,6 @@
       "description": "Featured with <strong>Dr. Mitra Naseh</strong> and Akino Tahir in a conversation on the economic integration of resettled refugees in the U.S. (Naseh et al., 2024), emphasizing a multidimensional approach beyond employment. Sponsored by WashU and IASFM20.",
       "tags": [
         "Podcast",
-        "Media",
         "Refugee",
         "Economic Integration"
       ],
@@ -236,7 +230,6 @@
       "name": "Providing Follow-Up Support for a Newly Resettled Afghan Family in St. Louis",
       "description": "After initially being paired with recently resettled refugees through the Practice with Refugees and Immigrants course, I continued to provide follow-up support for a newly resettled Afghan family in St. Louis. My role included accompanying family members to regular health check-ups and assisting with essential paperwork. This ongoing involvement offered a deeper perspective on the long-term challenges that refugee families encounter and reinforced the importance of sustained, community-based support.",
       "tags": [
-        "Community",
         "Refugee"
       ],
       "createAt": "2025-05-05",
@@ -249,12 +242,11 @@
       "name": "Two from Brown School named fellows by WashU’s Center for Race, Ethnicity & Equity ($4,000)",
       "description": "Jihye Lee, a PhD student in social work, has been selected as a 2025–2027 Race & Ethnicity Scholar Fellow. This fellowship is awarded annually to three graduate students whose work advances scholarship in race, ethnicity, and equity. Fellows participate in events, workshops, and professional development opportunities, and are encouraged to share their research or creative work with their cohort and center affiliates.",
       "tags": [
-        "Grants",
         "Center for Race, Ethnicity & Equity"
       ],
       "createAt": "2025-05-08",
       "pageUrl": "https://brownschool.washu.edu/2025/05/two-from-brown-school-named-fellows-by-washus-center-for-race-ethnicity-equity/",
-      "category": "grant"
+      "category": "awards"
     },
     {
       "id": 9,
@@ -269,7 +261,7 @@
       ],
       "createAt": "2025-04-10",
       "pageUrl": "https://forcedmigration.wustl.edu/graduate-research-assistant-jihye-lee-wins-the-second-prize-in-the-social-science-category-at-the-2025-30th-annual-graduate-research-symposium/",
-      "category": "award"
+      "category": "awards"
     },
     {
       "id": 8,
@@ -277,7 +269,6 @@
       "name": "Brown School Students Gain Hands-On Experience Supporting Refugees in St. Louis",
       "description": "Students in the Practice with Refugees and Immigrants course at the Brown School have the unique opportunity to work directly with newly resettled refugees in St. Louis, thanks to a collaboration with Welcome Neighbor St. Louis. This local nonprofit provides a range of services for new American families, including volunteer pairings with recently resettled refugees.",
       "tags": [
-        "Community",
         "Refugee"
       ],
       "createAt": "2025-03-12",
@@ -290,7 +281,6 @@
       "name": "1:1 Korean Language and Culture Mentoring for Korean-Americans",
       "description": "Provide weekly 1:1 Zoom mentoring for Korean-Americans, supporting Korean language acquisition, cultural knowledge, and identity exploration",
       "tags": [
-        "Community",
         "Korean-American",
         "Immigrant"
       ],
@@ -304,12 +294,11 @@
       "name": "Center awards seed grants to projects in human rights, gender and migration ($2,500)",
       "description": "Awarded 2024 Seed Grant for two doctoral students in Washington University in St. Louis ($2,500), Role: PI (Jihye Lee), Co-Pi (Mitra Naseh, Ph.D.): Quality of Life of Highly Educated Iranian Immigrants and Restrictive Migration Policies.",
       "tags": [
-        "Grants",
         "Institute for Public Health"
       ],
       "createAt": "2024-12-02",
       "pageUrl": "https://publichealth.wustl.edu/center-awards-seed-grants-to-two-projects-benefitting-marginalized-families/",
-      "category": "grant"
+      "category": "awards"
     },
     {
       "id": 5,
@@ -317,12 +306,11 @@
       "name": "Graduate Student Conference Travel Grants ($750)",
       "description": "Awarded Graduate Student Conference Travel Award in Washington University in St. Louis.",
       "tags": [
-        "Grants",
         "Center for Race, Ethnicity & Equity"
       ],
       "createAt": "2024-10-31",
       "pageUrl": "https://cre2.wustl.edu/research/funding-opportunities/grants/travelawards/",
-      "category": "grant"
+      "category": "awards"
     },
     {
       "id": 4,
@@ -330,7 +318,6 @@
       "name": "Brown School Students Gain Hands-On Experience Supporting Refugees in St. Louis",
       "description": "Students in the Practice with Refugees and Immigrants course at the Brown School have the unique opportunity to work directly with newly resettled refugees in St. Louis, thanks to a collaboration with Welcome Neighbor St. Louis. This local nonprofit provides a range of services for new American families, including volunteer pairings with recently resettled refugees.",
       "tags": [
-        "Community",
         "Refugee"
       ],
       "createAt": "2024-10-10",
@@ -343,12 +330,11 @@
       "name": "Brown School faculty and students receive Global Pilot Research Grants ($2,500)",
       "description": "Awarded Global Programs Pilot Research Fund in Washington University in St. Louis ($2,500), Role: PI (Jihye Lee), Co-Pi (Mitra Naseh, Ph.D.): Breaking Barriers: Unraveling the Impact of Financial Aid Policies on Social Mobility for DACA Recipients.",
       "tags": [
-        "Grants",
         "Global Impact at the Brown School"
       ],
       "createAt": "2024-09-06",
       "pageUrl": "https://globalbrown.wustl.edu/brown-school-faculty-and-students-receive-global-pilot-research-grants/",
-      "category": "grant"
+      "category": "awards"
     },
     {
       "id": 2,
@@ -361,7 +347,7 @@
       ],
       "createAt": "2024-09-01",
       "pageUrl": "https://forcedmigration.wustl.edu/items/exploring-the-role-of-social-position-and-administrative-barriers-in-the-multidimensional-economic-integration-of-newly-resettled-afghans-in-st-louis/",
-      "category": "project"
+      "category": "research"
     },
     {
       "id": 1,
@@ -374,7 +360,7 @@
       ],
       "createAt": "2024-08-31",
       "pageUrl": "https://forcedmigration.wustl.edu/items/economic-integration-and-poverty-among-the-newly-resettled-afghans-a-pilot-study/",
-      "category": "project"
+      "category": "research"
     }
   ]
 }
