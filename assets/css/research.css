@@ -228,3 +228,30 @@
     .pub-filter-label { margin-top: 16px; }
     .pub-link { margin-left: 0; }
 }
+
+/* Section headings, growth chart, lighter page header */
+.page-header { border-bottom: none; padding-bottom: 0; margin-bottom: 40px; }
+
+.sec-head {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+    margin: 0 0 28px;
+}
+.sec-head--plain { border-bottom: none; padding-bottom: 0; margin-bottom: 8px; }
+
+.growth { max-width: 940px; margin: 0 auto 56px; }
+.growth svg { display: block; width: 100%; height: auto; }
+.growth-cap { text-align: center; font-size: 13.5px; color: #999; margin-top: 2px; }
+.growth .g-yr { font: 600 14px 'Source Sans 3', sans-serif; fill: #555; }
+.growth .g-cat { font: 700 15px 'Source Sans 3', sans-serif; }
+.growth .g-n { font: 700 12px 'Source Sans 3', sans-serif; pointer-events: none; }
+.growth .g-dot { cursor: pointer; outline: none; }
+.growth .g-dot:hover circle, .growth .g-dot:focus-visible circle { stroke-width: 3.5; }
+
+@media (max-width: 600px) {
+    .growth { overflow-x: auto; }
+    .growth svg { min-width: 620px; }
+}

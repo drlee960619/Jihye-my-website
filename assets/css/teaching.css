@@ -97,3 +97,6 @@
 @media (min-width: 861px) {
     .tch-section .student-quotes { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* Section headings carry the dividers, so the page header has none */
+.page-header { border-bottom: none; padding-bottom: 0; margin-bottom: 40px; }
