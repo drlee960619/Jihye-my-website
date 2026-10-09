@@ -5,9 +5,7 @@
     "Poverty",
     "Immigration Policy",
     "Digital Inclusion & AI",
-    "Health & Well-being",
-    "Child & Family Welfare",
-    "Methods & Measurement"
+    "Child & Family Welfare"
   ],
   "papers": [
     {
@@ -30,8 +28,7 @@
       "venue": "Journal of Immigrant and Minority Health, 28(1), 78–88",
       "url": "https://doi.org/10.1007/s10903-025-01844-1",
       "categories": [
-        "Immigration Policy",
-        "Health & Well-being"
+        "Immigration Policy"
       ]
     },
     {
@@ -42,8 +39,7 @@
       "venue": "Journal of Ethnic and Migration Studies",
       "url": "https://doi.org/10.1080/1369183X.2026.2706353",
       "categories": [
-        "Digital Inclusion & AI",
-        "Health & Well-being"
+        "Digital Inclusion & AI"
       ]
     },
     {
@@ -54,8 +50,7 @@
       "venue": "Journal of the Society for Social Work and Research",
       "url": "https://doi.org/10.1086/740324",
       "categories": [
-        "Economic Integration",
-        "Methods & Measurement"
+        "Economic Integration"
       ]
     },
     {
@@ -78,8 +73,7 @@
       "venue": "Journal of Immigrant and Minority Health",
       "url": "https://doi.org/10.1007/s10903-026-01948-2",
       "categories": [
-        "Immigration Policy",
-        "Health & Well-being"
+        "Immigration Policy"
       ]
     },
     {
@@ -102,8 +96,7 @@
       "venue": "Forced Migration Initiative",
       "url": "https://doi.org/10.7936/f4tn-p468",
       "categories": [
-        "Poverty",
-        "Methods & Measurement"
+        "Poverty"
       ]
     },
     {
@@ -114,8 +107,7 @@
       "venue": "Humanities and Social Sciences Communications",
       "url": "https://doi.org/10.1057/s41599-026-07331-8",
       "categories": [
-        "Economic Integration",
-        "Methods & Measurement"
+        "Economic Integration"
       ]
     },
     {
@@ -126,8 +118,7 @@
       "venue": "Journal of Immigrant and Minority Health, 1–11",
       "url": "https://doi.org/10.1007/s10903-025-01760-4",
       "categories": [
-        "Immigration Policy",
-        "Health & Well-being"
+        "Immigration Policy"
       ]
     },
     {
@@ -161,8 +152,7 @@
       "venue": "Economies, 12(7), 167",
       "url": "https://doi.org/10.3390/economies12070167",
       "categories": [
-        "Economic Integration",
-        "Methods & Measurement"
+        "Economic Integration"
       ]
     },
     {
@@ -173,8 +163,7 @@
       "venue": "Social Science & Medicine, 116958",
       "url": "https://doi.org/10.1016/j.socscimed.2024.116958",
       "categories": [
-        "Health & Well-being",
-        "Methods & Measurement"
+        "Poverty"
       ]
     },
     {
@@ -196,8 +185,7 @@
       "venue": "Social Science, 61(2)",
       "url": "https://doi.org/10.22418/JSS.2022.8.61.2.441",
       "categories": [
-        "Child & Family Welfare",
-        "Methods & Measurement"
+        "Child & Family Welfare"
       ]
     },
     {
@@ -218,8 +206,7 @@
       "authors": "Lee, J., Naseh, M., Chen, J., Badiezadeh, S., Zamora Garcia, E., & Chow, C.",
       "venue": "Journal of the Society for Social Work and Research",
       "categories": [
-        "Immigration Policy",
-        "Methods & Measurement"
+        "Immigration Policy"
       ]
     },
     {
@@ -238,8 +225,7 @@
       "authors": "Lee, J., Yoo, N., Bechara, S., Zeng, Y., & Naseh, M.",
       "venue": "International Migration",
       "categories": [
-        "Digital Inclusion & AI",
-        "Methods & Measurement"
+        "Digital Inclusion & AI"
       ]
     },
     {
@@ -280,8 +266,7 @@
       "authors": "Chow, C., & Lee, J.",
       "venue": "Asian and Pacific Migration Journal",
       "categories": [
-        "Immigration Policy",
-        "Methods & Measurement"
+        "Immigration Policy"
       ]
     },
     {
@@ -291,8 +276,7 @@
       "venue": "AI & Society",
       "categories": [
         "Digital Inclusion & AI",
-        "Immigration Policy",
-        "Methods & Measurement"
+        "Immigration Policy"
       ]
     },
     {
@@ -312,8 +296,7 @@
       "venue": "Journal of Immigrant & Refugee Studies",
       "categories": [
         "Immigration Policy",
-        "Digital Inclusion & AI",
-        "Methods & Measurement"
+        "Digital Inclusion & AI"
       ]
     },
     {
@@ -350,8 +333,7 @@
       "authors": "Naseh, M., Badiezadeh, S., Lee, J., Rafieifar, M., & Suarez, C.",
       "venue": "SAGE Open",
       "categories": [
-        "Economic Integration",
-        "Health & Well-being"
+        "Economic Integration"
       ]
     },
     {
@@ -371,7 +353,6 @@
       "authors": "Ilkkursun, Z., Bechara, S., Badiezadeh, S., Lee, J., & Naseh, M.",
       "venue": "Child Indicators Research",
       "categories": [
-        "Health & Well-being",
         "Child & Family Welfare"
       ]
     }
