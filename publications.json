@@ -1,0 +1,252 @@
+{
+  "_howto": "Add one block per paper. status: 'published' or 'under-review'. type (optional): 'Policy Brief' or 'Working Paper'. note (optional, under review): e.g. 'R&R'. categories: pick from the 'categories' list below. Newest first is not required — the page sorts by year.",
+  "categories": [
+    "Economic Integration",
+    "Poverty & Hardship",
+    "Migration Policy",
+    "Digital Inclusion & AI",
+    "Health & Well-being",
+    "DACA & Liminal Legality",
+    "Child & Family Welfare",
+    "Methods & Measurement"
+  ],
+  "papers": [
+    {
+      "status": "published",
+      "type": "Policy Brief",
+      "year": 2026,
+      "title": "What Drives Refugees’ High Poverty in the Early Years after U.S. Resettlement?",
+      "authors": "Naseh, M., Lee, J., & Bechara, S.",
+      "venue": "Migration Policy Institute",
+      "url": "https://www.migrationpolicy.org/journal/feature/refugees-poverty-resettlement-us",
+      "categories": ["Poverty & Hardship", "Economic Integration", "Migration Policy"]
+    },
+    {
+      "status": "published",
+      "year": 2026,
+      "title": "Multidimensional Deprivation and Perceived Discrimination Among Newly Resettled Afghans in the U.S.",
+      "authors": "Lee, J., Naseh, M., Zeng, Y., & Bechara, S.",
+      "venue": "Journal of Immigrant & Refugee Studies",
+      "url": "https://doi.org/10.1080/15562948.2026.2670689",
+      "categories": ["Poverty & Hardship", "Economic Integration"]
+    },
+    {
+      "status": "published",
+      "year": 2026,
+      "title": "Health Impacts of Migration and Policy on the Iranian Diaspora",
+      "authors": "Lee, J., Naseh, M., Badiezadeh, S., Taridashti, S., & da Luz Scherf, E.",
+      "venue": "Journal of Immigrant and Minority Health, 28(1), 78–88",
+      "url": "https://doi.org/10.1007/s10903-025-01844-1",
+      "categories": ["Migration Policy", "Health & Well-being"]
+    },
+    {
+      "status": "published",
+      "year": 2026,
+      "title": "E-Government Engagement and Subjective Well-Being During the COVID-19 Pandemic: Comparing North Korean Refugees and Native Koreans",
+      "authors": "Yoo, N., Lee, J., & Jang, S.",
+      "venue": "Journal of Ethnic and Migration Studies",
+      "url": "https://doi.org/10.1080/1369183X.2026.2706353",
+      "categories": ["Digital Inclusion & AI", "Health & Well-being"]
+    },
+    {
+      "status": "published",
+      "year": 2026,
+      "title": "From First Jobs to Better Pay: Predicting Refugee Wage Mobility with Machine Learning",
+      "authors": "Zeng, Y., Naseh, M., Lee, J., & Bechara, S.",
+      "venue": "Journal of the Society for Social Work and Research",
+      "url": "https://doi.org/10.1086/740324",
+      "categories": ["Economic Integration", "Methods & Measurement"]
+    },
+    {
+      "status": "published",
+      "year": 2026,
+      "title": "Disproportionate Economic Hardships of COVID-19 on Immigrant Households",
+      "authors": "Ibrahim, H., Brugger, L., Lee, J., & Roll, S.",
+      "venue": "Children and Youth Services Review",
+      "url": "https://doi.org/10.1016/j.childyouth.2026.109185",
+      "categories": ["Poverty & Hardship", "Child & Family Welfare"]
+    },
+    {
+      "status": "published",
+      "year": 2026,
+      "title": "Migration Policies as Social Determinants of Health Among International Graduate Students in the United States",
+      "authors": "da Luz Scherf, E., Naseh, M., & Lee, J.",
+      "venue": "Journal of Immigrant and Minority Health",
+      "url": "https://doi.org/10.1007/s10903-026-01948-2",
+      "categories": ["Migration Policy", "Health & Well-being"]
+    },
+    {
+      "status": "published",
+      "year": 2026,
+      "title": "Afghan Refugees’ Multidimensional Deprivation: Comparative Analysis of St. Louis, Portland, and a National Refugee Sample",
+      "authors": "Bechara, S., Naseh, M., Zeng, Y., Lee, J., & Baker, J.",
+      "venue": "Journal of the Society for Social Work and Research",
+      "url": "https://doi.org/10.1086/742826",
+      "categories": ["Poverty & Hardship", "Economic Integration"]
+    },
+    {
+      "status": "published",
+      "type": "Working Paper",
+      "year": 2026,
+      "title": "Adaptation and Initial Validation of the U.S. Census Multidimensional Deprivation Index for Resettled Afghans (Working Paper No. 01)",
+      "authors": "Naseh, M., Bechara, S., Zeng, Y., Lee, J., & Potocky, M.",
+      "venue": "Forced Migration Initiative",
+      "url": "https://doi.org/10.7936/f4tn-p468",
+      "categories": ["Poverty & Hardship", "Methods & Measurement"]
+    },
+    {
+      "status": "published",
+      "year": 2026,
+      "title": "A Scoping Review of Economic Integration Interventions and Programs for Refugees",
+      "authors": "Naseh, M., Qushua, N., Nartey, P., Lee, J., & Razzak, R. B.",
+      "venue": "Humanities and Social Sciences Communications",
+      "url": "https://doi.org/10.1057/s41599-026-07331-8",
+      "categories": ["Economic Integration", "Methods & Measurement"]
+    },
+    {
+      "status": "published",
+      "year": 2025,
+      "title": "Health Impacts of Restrictive Migration Policies: A Qualitative Study of Highly Educated Iranian Immigrants and International Students in the U.S.",
+      "authors": "Taridashti, S., Naseh, M., Garcia, E. M. Z., & Lee, J.",
+      "venue": "Journal of Immigrant and Minority Health, 1–11",
+      "url": "https://doi.org/10.1007/s10903-025-01760-4",
+      "categories": ["Migration Policy", "Health & Well-being"]
+    },
+    {
+      "status": "published",
+      "year": 2025,
+      "title": "Child Tax Credit Utilization in Immigrant Households: A Focus on Child Investment and College Funds",
+      "authors": "Brugger, L., Bellisle, D., Maag, E., Udani, A., Roll, S., Hamilton, L., & Lee, J.",
+      "venue": "SN Business & Economics, 5(9), 109",
+      "url": "https://doi.org/10.1007/s43546-025-00871-2",
+      "categories": ["Migration Policy", "Child & Family Welfare"]
+    },
+    {
+      "status": "published",
+      "year": 2025,
+      "title": "The Mediating Role of Social Cohesion between Neighborhood Disorder and Child Maltreatment Behaviors across Childhood",
+      "authors": "Chung, Y., Maguire-Jack, K., Pei, F., Lee, J., & Chang, Y.",
+      "venue": "Journal of Family Violence, 1–11",
+      "url": "https://doi.org/10.1007/s10896-025-00988-w",
+      "categories": ["Child & Family Welfare"]
+    },
+    {
+      "status": "published",
+      "year": 2024,
+      "title": "Understanding Economic Integration in Immigrant and Refugee Populations: A Scoping Review of Concepts and Metrics in the United States",
+      "authors": "Naseh, M., Lee, J., Zeng, Y., Nabunya, P., Alvarez, V., & Safi, M.",
+      "venue": "Economies, 12(7), 167",
+      "url": "https://doi.org/10.3390/economies12070167",
+      "categories": ["Economic Integration", "Methods & Measurement"]
+    },
+    {
+      "status": "published",
+      "year": 2024,
+      "title": "Do the Benefits of Homeownership on Mental Health Vary by Race and Poverty Status? An Application of Doubly Robust Estimation for Causal Inference",
+      "authors": "Chen, J., Jones, D., Lee, J., Yan, Y., Hsieh, W. J., Huang, C. H., ... & Drake, B.",
+      "venue": "Social Science & Medicine, 116958",
+      "url": "https://doi.org/10.1016/j.socscimed.2024.116958",
+      "categories": ["Health & Well-being", "Methods & Measurement"]
+    },
+    {
+      "status": "published",
+      "year": 2022,
+      "title": "Family-, School-, and Neighborhood-Level Predictors of Resilience for Adolescents with a History of Maltreatment",
+      "authors": "Chang, Y., Maguire-Jack, K., Yoon, S., & Lee, J.",
+      "venue": "Children, 10(1), 1",
+      "url": "https://doi.org/10.3390/children10010001",
+      "categories": ["Child & Family Welfare"]
+    },
+    {
+      "status": "published",
+      "year": 2022,
+      "title": "Analysis of Research Trends in Youth After-school Academy: Focusing on Keyword Network Analysis",
+      "authors": "Lee, J., & Moon, S.",
+      "venue": "Social Science, 61(2)",
+      "url": "https://doi.org/10.22418/JSS.2022.8.61.2.441",
+      "categories": ["Child & Family Welfare", "Methods & Measurement"]
+    },
+
+    {
+      "status": "under-review",
+      "title": "Beyond Equal Access: Digital Skill, Bounded Compensation, and Migrant Economic Activity",
+      "authors": "Lee, J., & Yoo, N.",
+      "venue": "Telecommunications Policy",
+      "categories": ["Digital Inclusion & AI", "Economic Integration"]
+    },
+    {
+      "status": "under-review",
+      "title": "Getting by Without Getting Ahead: Low-Barrier Gig Work and the Early Economic Integration of Newly Resettled Afghans in the U.S.",
+      "authors": "Lee, J., Bechara, S., Zeng, Y., Haran, H., & Naseh, M.",
+      "venue": "Journal of Refugee Studies",
+      "categories": ["Digital Inclusion & AI", "Economic Integration", "Poverty & Hardship"]
+    },
+    {
+      "status": "under-review",
+      "title": "Multidimensional Poverty Among Newly Resettled Refugee Households: Evidence from the 2020–2022 Annual Survey of Refugees",
+      "authors": "Lee, J., Bechara, S., Zeng, Y., & Naseh, M.",
+      "venue": "Journal of International Migration and Integration",
+      "categories": ["Poverty & Hardship", "Economic Integration"]
+    },
+    {
+      "status": "under-review",
+      "note": "R&R",
+      "title": "Liminal Legality in the DACA Literature: A Social Network Analysis Across Presidential Administrations",
+      "authors": "Lee, J., Naseh, M., Chen, J., Badiezadeh, S., Zamora Garcia, E., & Chow, C.",
+      "venue": "Journal of the Society for Social Work and Research",
+      "categories": ["DACA & Liminal Legality", "Methods & Measurement"]
+    },
+    {
+      "status": "under-review",
+      "title": "Peer Support and Digital Mutual Aid among DACA Recipients Under Liminal Legality: A Computational Text Analysis of Reddit Community",
+      "authors": "Yoo, N., Lee, J., Cureton, A., & Chow, C.",
+      "venue": "International Migration Review",
+      "categories": ["DACA & Liminal Legality", "Digital Inclusion & AI", "Methods & Measurement"]
+    },
+    {
+      "status": "under-review",
+      "title": "Material Hardship and Livelihood Coping Strategies among Refugees in South Korea",
+      "authors": "Yoo, N., Lee, J., Min, S., & Kim, Y.",
+      "venue": "Journal of Human Rights and Social Work",
+      "categories": ["Poverty & Hardship"]
+    },
+    {
+      "status": "under-review",
+      "title": "Afghan Refugees’ Conceptions of Economic Integration in the United States",
+      "authors": "Naseh, M., Lee, J., Badiezadeh, S., & Safi, H.",
+      "venue": "Journal of Sociology & Social Welfare",
+      "categories": ["Economic Integration"]
+    },
+    {
+      "status": "under-review",
+      "note": "R&R",
+      "title": "Domain-Specific Patterns of Perceived AI Usefulness Among North Korean Refugees and Native Koreans: A Latent Profile Analysis",
+      "authors": "Yoo, N., Lee, J., & Jang, S.",
+      "venue": "Journal of Psychology and AI",
+      "categories": ["Digital Inclusion & AI"]
+    },
+    {
+      "status": "under-review",
+      "note": "R&R",
+      "title": "Policy Models of Immigrant Political Incorporation: Conceptualization and Empirical Cases in Asian Developed Economies Using Fuzzy Sets",
+      "authors": "Chow, C., & Lee, J.",
+      "venue": "Asian and Pacific Migration Journal",
+      "categories": ["Migration Policy", "Methods & Measurement"]
+    },
+    {
+      "status": "under-review",
+      "note": "R&R",
+      "title": "Social Connectedness, Integration, and Quality of Life Among Newly Resettled Afghan Refugee Households in the United States",
+      "authors": "Naseh, M., Badiezadeh, S., Lee, J., Rafieifar, M., & Suarez, C.",
+      "venue": "Sage Open",
+      "categories": ["Economic Integration", "Health & Well-being"]
+    },
+    {
+      "status": "under-review",
+      "title": "Structural Barriers and Facilitators in Accessing Employment for Refugees in Missouri",
+      "authors": "Naseh, M., Bechara, S., Badiezadeh, S., Lee, J., & Baker, J.",
+      "venue": "Journal of the Society for Social Work and Research",
+      "categories": ["Economic Integration"]
+    }
+  ]
+}
