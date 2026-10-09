@@ -15,7 +15,8 @@
         yearBlock: root.querySelector('#pub-year-block')
     };
 
-    const state = { status: 'published', q: '', year: 'all', cats: new Set() };
+    // Multi-select: OR within years, OR within topics, AND between the two groups
+    const state = { status: 'published', q: '', years: new Set(), cats: new Set() };
     let data = { categories: [], papers: [] };
 
     const esc = s => String(s ?? '').replace(/[&<>"']/g, c =>
@@ -29,7 +30,7 @@
         const hay = (p.title + ' ' + p.authors + ' ' + p.venue + ' ' + (p.categories || []).join(' ')).toLowerCase();
         return state.q.toLowerCase().split(/\s+/).every(t => hay.includes(t));
     }
-    const matchesYear = p => state.year === 'all' || String(p.year) === state.year;
+    const matchesYear = p => state.years.size === 0 || state.years.has(String(p.year));
     const matchesCats = p => state.cats.size === 0 || (p.categories || []).some(c => state.cats.has(c));
 
     function inTab() { return data.papers.filter(p => p.status === state.status); }
@@ -37,30 +38,26 @@
     function renderFilters() {
         const base = inTab().filter(matchesText);
 
-        // Years (counts respect search + category filters)
-        const yBase = base.filter(matchesCats);
-        const yearCounts = {};
-        yBase.forEach(p => { if (p.year) yearCounts[p.year] = (yearCounts[p.year] || 0) + 1; });
-        const years = Object.keys(yearCounts).sort((a, b) => b - a);
+        // Years: every year in this tab; dimmed when it would add nothing under the other filters
+        const tabYears = [...new Set(inTab().map(p => p.year).filter(Boolean))].sort((a, b) => b - a);
+        const yLive = new Set(base.filter(matchesCats).map(p => p.year));
         els.yearBlock.hidden = state.status !== 'published';
         els.years.innerHTML =
-            chip('all', `All (${yBase.length})`, state.year === 'all', 'year') +
-            years.map(y => chip(y, `${y} (${yearCounts[y]})`, state.year === y, 'year')).join('');
+            chip('all', 'All', state.years.size === 0, 'year') +
+            tabYears.map(y => chip(String(y), y, state.years.has(String(y)), 'year', !yLive.has(y))).join('');
 
-        // Categories (counts respect search + year filters)
-        const cBase = base.filter(matchesYear);
-        els.cats.innerHTML = data.categories.map(c => {
-            const n = cBase.filter(p => (p.categories || []).includes(c)).length;
-            if (n === 0 && !state.cats.has(c)) return '';
-            return chip(c, `${c} (${n})`, state.cats.has(c), 'cat');
-        }).join('');
+        // Topics: only those used in this tab; dimmed when empty under the other filters
+        const tabCats = new Set(inTab().flatMap(p => p.categories || []));
+        const cLive = new Set(base.filter(matchesYear).flatMap(p => p.categories || []));
+        els.cats.innerHTML = data.categories.filter(c => tabCats.has(c))
+            .map(c => chip(c, c, state.cats.has(c), 'cat', !cLive.has(c))).join('');
 
-        const active = state.q || state.year !== 'all' || state.cats.size;
+        const active = state.q || state.years.size || state.cats.size;
         els.clear.hidden = !active;
     }
 
-    function chip(value, label, on, kind) {
-        return `<button type="button" class="pub-chip${on ? ' is-on' : ''}" data-kind="${kind}" data-value="${esc(value)}" aria-pressed="${on}">${esc(label)}</button>`;
+    function chip(value, label, on, kind, dim) {
+        return `<button type="button" class="pub-chip${on ? ' is-on' : ''}${dim && !on ? ' is-dim' : ''}" data-kind="${kind}" data-value="${esc(value)}" aria-pressed="${on}">${esc(label)}</button>`;
     }
 
     function renderList() {
@@ -109,7 +106,7 @@
     // Events
     els.tabs.forEach(t => t.addEventListener('click', () => {
         state.status = t.dataset.status;
-        state.year = 'all';
+        state.years.clear();
         els.tabs.forEach(x => {
             const on = x === t;
             x.classList.toggle('is-on', on);
@@ -124,7 +121,10 @@
         const b = e.target.closest('[data-kind]');
         if (!b) return;
         const v = b.dataset.value;
-        if (b.dataset.kind === 'year') state.year = v;
+        if (b.dataset.kind === 'year') {
+            if (v === 'all') state.years.clear();
+            else state.years.has(v) ? state.years.delete(v) : state.years.add(v);
+        }
         if (b.dataset.kind === 'cat') {
             // Tag inside a paper always selects just that category
             if (b.classList.contains('pub-tag')) { state.cats = new Set([v]); }
@@ -134,7 +134,7 @@
     });
 
     els.clear.addEventListener('click', () => {
-        state.q = ''; state.year = 'all'; state.cats.clear();
+        state.q = ''; state.years.clear(); state.cats.clear();
         els.search.value = '';
         render();
     });

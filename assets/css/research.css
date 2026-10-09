@@ -94,6 +94,8 @@
 
 .pub-chip:hover { border-color: var(--primary-color); color: var(--primary-color); }
 
+.pub-chip.is-dim { opacity: .45; }
+
 .pub-chip.is-on {
     background: var(--primary-color);
     border-color: var(--primary-color);
