@@ -1,0 +1,99 @@
+/* Teaching page — list layout */
+.tch-section { margin-bottom: 64px; }
+
+.tch-heading {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 8px;
+}
+
+.tch-group { margin-top: 26px; }
+
+.tch-role {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.tch-list { list-style: none; margin: 0; padding: 0; }
+
+.tch-row {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 24px;
+    padding: 14px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.tch-term {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--primary-color);
+    padding-top: 2px;
+}
+
+.tch-body h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0 0 2px;
+    line-height: 1.4;
+}
+
+.tch-body p { font-size: 15.5px; color: #666; margin: 0; }
+
+.tch-note {
+    display: inline-block;
+    vertical-align: 2px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    padding: 0 6px;
+    margin-left: 8px;
+}
+
+.tch-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 26px 0 30px;
+}
+
+.tch-stat {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.tch-stat-num {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.tch-stat-label { font-size: 15px; color: #444; line-height: 1.35; }
+.tch-stat-label small { font-size: 12.5px; color: #888; }
+
+@media (max-width: 860px) {
+    .tch-stats { grid-template-columns: 1fr; }
+    .tch-row { grid-template-columns: 1fr; gap: 2px; }
+}
+
+/* Four quotes sit as a 2×2 grid instead of 3 + 1 */
+@media (min-width: 861px) {
+    .tch-section .student-quotes { grid-template-columns: repeat(2, 1fr); }
+}
