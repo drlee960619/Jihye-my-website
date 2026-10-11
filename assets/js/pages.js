@@ -154,7 +154,7 @@ if (prevPageBtn && pdfCanvas && window.pdfjsLib) {
     });
     
     // Load PDF
-    const url = 'assets/cv/CV.pdf';
+    const url = 'assets/cv/CV_JL.pdf';
     
     pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
         pdfDoc = pdfDoc_;
