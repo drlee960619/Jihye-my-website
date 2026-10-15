@@ -15,20 +15,6 @@
   "papers": [
     {
       "status": "published",
-      "type": "Policy Brief",
-      "year": 2026,
-      "title": "What Drives Refugees’ High Poverty in the Early Years after U.S. Resettlement?",
-      "authors": "Naseh, M., Lee, J., & Bechara, S.",
-      "venue": "Migration Policy Institute",
-      "url": "https://www.migrationpolicy.org/journal/feature/refugees-poverty-resettlement-us",
-      "categories": [
-        "Poverty",
-        "Economic Integration",
-        "Immigration Policy"
-      ]
-    },
-    {
-      "status": "published",
       "year": 2026,
       "title": "Multidimensional Poverty and Perceived Discrimination Among Newly Resettled Afghans in the U.S.",
       "authors": "Lee, J., Naseh, M., Zeng, Y., Bechara, S., & Hamilton, B.",
@@ -58,6 +44,20 @@
       "venue": "Journal of Immigrant and Minority Health, 28(1), 78–88",
       "url": "https://doi.org/10.1007/s10903-025-01844-1",
       "categories": [
+        "Immigration Policy"
+      ]
+    },
+    {
+      "status": "published",
+      "type": "Policy Brief",
+      "year": 2026,
+      "title": "What Drives Refugees’ High Poverty in the Early Years after U.S. Resettlement?",
+      "authors": "Naseh, M., Lee, J., & Bechara, S.",
+      "venue": "Migration Policy Institute",
+      "url": "https://www.migrationpolicy.org/journal/feature/refugees-poverty-resettlement-us",
+      "categories": [
+        "Poverty",
+        "Economic Integration",
         "Immigration Policy"
       ]
     },
