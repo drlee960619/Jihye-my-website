@@ -10,8 +10,20 @@
         "RISE Seminar"
       ],
       "createAt": "2026-10-15",
-      "pageUrl": "https://brownschool.washu.edu/2026/10/lee-selected-for-competitive-social-work-doctoral-seminar/",
+      "pageUrl": "https://sswr.org/general/custom.asp?page=RISE",
       "category": "awards"
+    },
+    {
+      "id": 31,
+      "imageUrl": "assets/images/news/clarkfox.jpg",
+      "name": "Featured in Brown School News: Lee Selected for Competitive Social Work Doctoral Seminar",
+      "description": "The Brown School featured Jihye Lee’s selection for the <strong>SSWR 2027 RISE Seminar</strong> and her research on <strong>how employment and access to human services shape the economic security of immigrant and refugee families</strong>.",
+      "tags": [
+        "Brown School News"
+      ],
+      "createAt": "2026-10-15",
+      "pageUrl": "https://brownschool.washu.edu/2026/10/lee-selected-for-competitive-social-work-doctoral-seminar/",
+      "category": "media"
     },
     {
       "id": 29,
