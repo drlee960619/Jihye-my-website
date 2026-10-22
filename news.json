@@ -1,6 +1,19 @@
 {
   "news": [
     {
+      "id": 32,
+      "imageUrl": "assets/images/news/publication3.png",
+      "name": "New Publication: Liminal Legality and the Organization of DACA Scholarship",
+      "description": "My first-authored paper <strong>Liminal Legality and the Organization of DACA Scholarship: Keyword Co-occurrence Networks Across Presidential Administrations</strong> is now available online as a Just Accepted article in the <strong>Journal of the Society for Social Work and Research</strong>.",
+      "tags": [
+        "DACA",
+        "Liminal Legality"
+      ],
+      "createAt": "2026-10-22",
+      "pageUrl": "https://doi.org/10.1086/744483",
+      "category": "research"
+    },
+    {
       "id": 30,
       "imageUrl": "assets/images/news/rise.jpg",
       "name": "Selected for the 2027 SSWR RISE Seminar",
