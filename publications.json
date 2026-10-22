@@ -25,14 +25,14 @@
     },
     {
       "status": "published",
-      "note": "In press",
       "year": 2026,
       "title": "Liminal Legality and the Organization of DACA Scholarship: Keyword Co-occurrence Networks Across Presidential Administrations, 2013–2026",
       "authors": "Lee, J., Naseh, M., Chen, J., Badiezadeh, S., Zamora Garcia, E., & Chow, C.",
       "venue": "Journal of the Society for Social Work and Research",
       "categories": [
         "Immigration Policy"
-      ]
+      ],
+      "url": "https://doi.org/10.1086/744483"
     },
     {
       "status": "published",
@@ -239,16 +239,16 @@
       "status": "under-review",
       "title": "From Displacement to Settlement: A Scoping Review of Predictive AI in Refugee and Immigration Services",
       "authors": "Lee, J., Yoo, N., Bechara, S., Zeng, Y., & Naseh, M.",
-      "venue": "International Migration",
+      "venue": "AI & Society",
       "categories": [
         "Digital & AI"
       ]
     },
     {
       "status": "under-review",
-      "title": "Testing the Social Diversification Hypothesis After Resettlement: Digital Skill, Social Capital, and Online Economic Activity Among North Korean Refugees and South Koreans",
+      "title": "Similar Activity, Stronger Links to Digital Skill: Online Economic Activity Among North Korean Refugees and Native South Koreans",
       "authors": "Lee, J., & Yoo, N.",
-      "venue": "Universal Access in the Information Society",
+      "venue": "Journal of Immigrant & Refugee Studies",
       "categories": [
         "Digital & AI",
         "Economic Security"
@@ -356,7 +356,7 @@
     {
       "status": "under-review",
       "note": "R&R",
-      "title": "Structural Barriers and Facilitators in Accessing Employment for Refugees in Missouri",
+      "title": "Structural Barriers and Pathways to Employment Among Refugees in Missouri: Findings from a Community-Engaged Multi-Site Qualitative Study",
       "authors": "Naseh, M., Bechara, S., Badiezadeh, S., Lee, J., & Baker, J.",
       "venue": "Journal of the Society for Social Work and Research",
       "categories": [
