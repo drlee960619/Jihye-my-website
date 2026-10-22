@@ -1,16 +1,15 @@
 {
   "_howto": "Add one block per paper. status: 'published' or 'under-review'. type (optional): 'Policy Brief' shows a badge. note (optional, under review): e.g. 'R&R'. categories: pick from the 'categories' list below. The page sorts by year; within a year, array order is kept. 'pillars' lists the topics drawn in red, on top, in the 'How My Research Has Grown' chart; the rest are drawn in grey below.",
   "categories": [
-    "Economic Integration",
-    "Poverty",
+    "Economic Security",
     "Immigration Policy",
-    "Digital Inclusion & AI",
-    "Child & Family Welfare"
+    "Digital & AI",
+    "Children & Families"
   ],
   "pillars": [
-    "Economic Integration",
+    "Economic Security",
     "Immigration Policy",
-    "Digital Inclusion & AI"
+    "Digital & AI"
   ],
   "papers": [
     {
@@ -21,8 +20,7 @@
       "venue": "Journal of Immigrant & Refugee Studies",
       "url": "https://doi.org/10.1080/15562948.2026.2670689",
       "categories": [
-        "Poverty",
-        "Economic Integration"
+        "Economic Security"
       ]
     },
     {
@@ -56,8 +54,7 @@
       "venue": "Migration Policy Institute",
       "url": "https://www.migrationpolicy.org/journal/feature/refugees-poverty-resettlement-us",
       "categories": [
-        "Poverty",
-        "Economic Integration",
+        "Economic Security",
         "Immigration Policy"
       ]
     },
@@ -69,7 +66,7 @@
       "venue": "Journal of Ethnic and Migration Studies",
       "url": "https://doi.org/10.1080/1369183X.2026.2706353",
       "categories": [
-        "Digital Inclusion & AI"
+        "Digital & AI"
       ]
     },
     {
@@ -80,7 +77,7 @@
       "venue": "Journal of the Society for Social Work and Research",
       "url": "https://doi.org/10.1086/740324",
       "categories": [
-        "Economic Integration"
+        "Economic Security"
       ]
     },
     {
@@ -91,8 +88,8 @@
       "venue": "Children and Youth Services Review",
       "url": "https://doi.org/10.1016/j.childyouth.2026.109185",
       "categories": [
-        "Poverty",
-        "Child & Family Welfare"
+        "Economic Security",
+        "Children & Families"
       ]
     },
     {
@@ -114,8 +111,7 @@
       "venue": "Journal of the Society for Social Work and Research",
       "url": "https://doi.org/10.1086/742826",
       "categories": [
-        "Poverty",
-        "Economic Integration"
+        "Economic Security"
       ]
     },
     {
@@ -126,7 +122,7 @@
       "venue": "Forced Migration Initiative",
       "url": "https://doi.org/10.7936/f4tn-p468",
       "categories": [
-        "Poverty"
+        "Economic Security"
       ]
     },
     {
@@ -137,7 +133,7 @@
       "venue": "Humanities and Social Sciences Communications",
       "url": "https://doi.org/10.1057/s41599-026-07331-8",
       "categories": [
-        "Economic Integration"
+        "Economic Security"
       ]
     },
     {
@@ -160,7 +156,7 @@
       "url": "https://doi.org/10.1007/s43546-025-00871-2",
       "categories": [
         "Immigration Policy",
-        "Child & Family Welfare"
+        "Children & Families"
       ]
     },
     {
@@ -171,7 +167,7 @@
       "venue": "Journal of Family Violence, 1–11",
       "url": "https://doi.org/10.1007/s10896-025-00988-w",
       "categories": [
-        "Child & Family Welfare"
+        "Children & Families"
       ]
     },
     {
@@ -182,7 +178,7 @@
       "venue": "Economies, 12(7), 167",
       "url": "https://doi.org/10.3390/economies12070167",
       "categories": [
-        "Economic Integration"
+        "Economic Security"
       ]
     },
     {
@@ -193,7 +189,7 @@
       "venue": "Social Science & Medicine, 116958",
       "url": "https://doi.org/10.1016/j.socscimed.2024.116958",
       "categories": [
-        "Poverty"
+        "Economic Security"
       ]
     },
     {
@@ -204,7 +200,7 @@
       "venue": "Children, 10(1), 1",
       "url": "https://doi.org/10.3390/children10010001",
       "categories": [
-        "Child & Family Welfare"
+        "Children & Families"
       ]
     },
     {
@@ -215,7 +211,7 @@
       "venue": "Social Science, 61(2)",
       "url": "https://doi.org/10.22418/JSS.2022.8.61.2.441",
       "categories": [
-        "Child & Family Welfare"
+        "Children & Families"
       ]
     },
     {
@@ -225,9 +221,8 @@
       "authors": "Lee, J., Bechara, S., Zeng, Y., & Naseh, M.",
       "venue": "Journal of International Migration and Integration",
       "categories": [
-        "Poverty",
-        "Economic Integration",
-        "Child & Family Welfare"
+        "Economic Security",
+        "Children & Families"
       ]
     },
     {
@@ -236,9 +231,8 @@
       "authors": "Lee, J., Dusard, L., Bechara, S., & Naseh, M.",
       "venue": "Journal of Ethnic and Migration Studies",
       "categories": [
-        "Poverty",
-        "Economic Integration",
-        "Child & Family Welfare"
+        "Economic Security",
+        "Children & Families"
       ]
     },
     {
@@ -247,7 +241,7 @@
       "authors": "Lee, J., Yoo, N., Bechara, S., Zeng, Y., & Naseh, M.",
       "venue": "International Migration",
       "categories": [
-        "Digital Inclusion & AI"
+        "Digital & AI"
       ]
     },
     {
@@ -256,8 +250,8 @@
       "authors": "Lee, J., & Yoo, N.",
       "venue": "Universal Access in the Information Society",
       "categories": [
-        "Digital Inclusion & AI",
-        "Economic Integration"
+        "Digital & AI",
+        "Economic Security"
       ]
     },
     {
@@ -266,9 +260,8 @@
       "authors": "Lee, J., Bechara, S., Zeng, Y., Haran, H., & Naseh, M.",
       "venue": "Journal of Refugee Studies",
       "categories": [
-        "Digital Inclusion & AI",
-        "Economic Integration",
-        "Poverty"
+        "Digital & AI",
+        "Economic Security"
       ]
     },
     {
@@ -278,7 +271,7 @@
       "authors": "Yoo, N., Lee, J., & Jang, S.",
       "venue": "Journal of Psychology and AI",
       "categories": [
-        "Digital Inclusion & AI"
+        "Digital & AI"
       ]
     },
     {
@@ -297,7 +290,7 @@
       "authors": "Yoo, N., & Lee, J.",
       "venue": "AI & Society",
       "categories": [
-        "Digital Inclusion & AI",
+        "Digital & AI",
         "Immigration Policy"
       ]
     },
@@ -307,7 +300,7 @@
       "authors": "Yoo, N., Lee, J., Zhang, X., & Ki, D.",
       "venue": "Computer-Supported Cooperative Work Human-Computer Interaction",
       "categories": [
-        "Digital Inclusion & AI",
+        "Digital & AI",
         "Immigration Policy"
       ]
     },
@@ -318,7 +311,7 @@
       "venue": "Journal of Immigrant & Refugee Studies",
       "categories": [
         "Immigration Policy",
-        "Digital Inclusion & AI"
+        "Digital & AI"
       ]
     },
     {
@@ -327,7 +320,7 @@
       "authors": "Yoo, N., & Lee, J.",
       "venue": "Journal of International Migration and Integration",
       "categories": [
-        "Digital Inclusion & AI"
+        "Digital & AI"
       ]
     },
     {
@@ -336,8 +329,8 @@
       "authors": "Yoo, N., Lee, J., Min, S., & Kim, Y.",
       "venue": "Journal of Human Rights and Social Work",
       "categories": [
-        "Poverty",
-        "Child & Family Welfare"
+        "Economic Security",
+        "Children & Families"
       ]
     },
     {
@@ -346,7 +339,7 @@
       "authors": "Naseh, M., Lee, J., Badiezadeh, S., & Safi, H.",
       "venue": "Journal of Sociology & Social Welfare",
       "categories": [
-        "Economic Integration"
+        "Economic Security"
       ]
     },
     {
@@ -356,8 +349,8 @@
       "authors": "Naseh, M., Badiezadeh, S., Lee, J., Rafieifar, M., & Suarez, C.",
       "venue": "SAGE Open",
       "categories": [
-        "Economic Integration",
-        "Child & Family Welfare"
+        "Economic Security",
+        "Children & Families"
       ]
     },
     {
@@ -367,7 +360,7 @@
       "authors": "Naseh, M., Bechara, S., Badiezadeh, S., Lee, J., & Baker, J.",
       "venue": "Journal of the Society for Social Work and Research",
       "categories": [
-        "Economic Integration"
+        "Economic Security"
       ]
     },
     {
@@ -377,7 +370,7 @@
       "authors": "Ilkkursun, Z., Bechara, S., Badiezadeh, S., Lee, J., & Naseh, M.",
       "venue": "Child Indicators Research",
       "categories": [
-        "Child & Family Welfare"
+        "Children & Families"
       ]
     }
   ]
