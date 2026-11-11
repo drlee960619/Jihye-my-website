@@ -23,7 +23,10 @@
         ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
     // Bold "Lee, J." in the author string
-    const fmtAuthors = a => esc(a).replace(/Lee, J\./g, '<strong>Lee, J.</strong>');
+    // "**Name**" marks which author to bold (for papers with two J. Lees); otherwise every "Lee, J." is bold
+    const fmtAuthors = a => a.includes('**')
+        ? esc(a).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+        : esc(a).replace(/Lee, J\./g, '<strong>Lee, J.</strong>');
 
     function matchesText(p) {
         if (!state.q) return true;
