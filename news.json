@@ -1,6 +1,20 @@
 {
   "news": [
     {
+      "id": 33,
+      "imageUrl": "assets/images/news/appam-kaps.jpg",
+      "name": "APPAM-KAPS Graduate Student Paper Award (2nd Place), 2026",
+      "description": "Jihye Lee received the <strong>2026 APPAM-KAPS Graduate Student Paper Award (2nd Place)</strong> for her first-authored paper <strong>“Who Counts as Poor? Income, Employment, and Multidimensional Poverty Among Newly Resettled Refugee Households in the United States.”</strong>",
+      "tags": [
+        "APPAM",
+        "KAPS",
+        "Paper Award"
+      ],
+      "createAt": "2026-11-10",
+      "pageUrl": "research.html",
+      "category": "awards"
+    },
+    {
       "id": 32,
       "imageUrl": "assets/images/news/publication3.png",
       "name": "New Publication: Liminal Legality and the Organization of DACA Scholarship",
