@@ -15,7 +15,7 @@
     {
       "status": "published",
       "year": 2026,
-      "title": "Multidimensional Poverty and Perceived Discrimination Among Newly Resettled Afghans in the U.S.",
+      "title": "Multidimensional Poverty and Perceived Discrimination Among Newly Resettled Afghans in the United States",
       "authors": "Lee, J., Naseh, M., Zeng, Y., Bechara, S., & Hamilton, B.",
       "venue": "Journal of Immigrant & Refugee Studies",
       "url": "https://doi.org/10.1080/15562948.2026.2670689",
@@ -26,7 +26,7 @@
     {
       "status": "published",
       "year": 2026,
-      "title": "Liminal Legality and the Organization of DACA Scholarship: Keyword Co-occurrence Networks Across Presidential Administrations, 2013–2026",
+      "title": "Reproducing Liminal Legality in Academic Discourse: A Social Network Analysis of DACA Research Across Presidential Administrations",
       "authors": "Lee, J., Naseh, M., Chen, J., Badiezadeh, S., Zamora Garcia, E., & Chow, C.",
       "venue": "Journal of the Society for Social Work and Research",
       "categories": [
@@ -61,10 +61,21 @@
     {
       "status": "published",
       "year": 2026,
-      "title": "E-Government Engagement and Subjective Well-Being During the COVID-19 Pandemic: Comparing North Korean Refugees and Native Koreans",
+      "title": "Beyond the Digital Divide: E-Government Services and Subjective Well-Being Among North Korean Refugees and Native-Born Koreans During COVID-19",
       "authors": "Yoo, N., Lee, J., & Jang, S.",
       "venue": "Journal of Ethnic and Migration Studies",
       "url": "https://doi.org/10.1080/1369183X.2026.2706353",
+      "categories": [
+        "Digital & AI"
+      ]
+    },
+    {
+      "status": "published",
+      "note": "In press",
+      "year": 2026,
+      "title": "Domain-Specific Patterns of Perceived AI Usefulness Among North Korean Refugees and Native Koreans: A Latent Profile Analysis",
+      "authors": "Yoo, N., Lee, J., & Jang, S.",
+      "venue": "Journal of Psychology and AI",
       "categories": [
         "Digital & AI"
       ]
@@ -83,7 +94,7 @@
     {
       "status": "published",
       "year": 2026,
-      "title": "Disproportionate Economic Hardships of COVID-19 on Immigrant Households",
+      "title": "Disparities in Economic Hardships Among Immigrant Households During COVID-19: Evidence from a National Survey",
       "authors": "Ibrahim, H., Brugger, L., Lee, J., & Roll, S.",
       "venue": "Children and Youth Services Review",
       "url": "https://doi.org/10.1016/j.childyouth.2026.109185",
@@ -95,7 +106,7 @@
     {
       "status": "published",
       "year": 2026,
-      "title": "Migration Policies as Social Determinants of Health Among International Graduate Students in the United States",
+      "title": "Immigration Policies as Social Determinants of Health Among International Students in the United States",
       "authors": "da Luz Scherf, E., Naseh, M., & Lee, J.",
       "venue": "Journal of Immigrant and Minority Health",
       "url": "https://doi.org/10.1007/s10903-026-01948-2",
@@ -216,6 +227,15 @@
     },
     {
       "status": "under-review",
+      "title": "Which Barrier, for Whom? Refugees’ Barriers to Permanent Residence in the United States",
+      "authors": "Lee, J.",
+      "venue": "Journal of Social Service Research",
+      "categories": [
+        "Immigration Policy"
+      ]
+    },
+    {
+      "status": "under-review",
       "note": "R&R",
       "title": "Who Counts as Poor? Income, Employment, and Multidimensional Poverty Among Newly Resettled Refugee Households in the United States",
       "authors": "Lee, J., Bechara, S., Zeng, Y., & Naseh, M.",
@@ -223,13 +243,14 @@
       "categories": [
         "Economic Security",
         "Children & Families"
-      ]
+      ],
+      "award": "APPAM-KAPS Paper Award"
     },
     {
       "status": "under-review",
       "title": "Enough for a Household? Individual Wages and Household Poverty Among Newly Resettled Refugees in the United States",
       "authors": "Lee, J., Dusard, L., Bechara, S., & Naseh, M.",
-      "venue": "Journal of Ethnic and Migration Studies",
+      "venue": "Population Research and Policy Review",
       "categories": [
         "Economic Security",
         "Children & Families"
@@ -242,7 +263,8 @@
       "venue": "AI & Society",
       "categories": [
         "Digital & AI"
-      ]
+      ],
+      "note": "R&R"
     },
     {
       "status": "under-review",
@@ -267,20 +289,20 @@
     {
       "status": "under-review",
       "note": "R&R",
-      "title": "Domain-Specific Patterns of Perceived AI Usefulness Among North Korean Refugees and Native Koreans: A Latent Profile Analysis",
-      "authors": "Yoo, N., Lee, J., & Jang, S.",
-      "venue": "Journal of Psychology and AI",
-      "categories": [
-        "Digital & AI"
-      ]
-    },
-    {
-      "status": "under-review",
-      "note": "R&R",
       "title": "Policy Models of Immigrant Political Incorporation: Conceptualization and Empirical Cases in Asian Developed Economies Using Fuzzy Sets",
       "authors": "Chow, C., & Lee, J.",
       "venue": "Asian and Pacific Migration Journal",
       "categories": [
+        "Immigration Policy"
+      ]
+    },
+    {
+      "status": "under-review",
+      "title": "Extended Unemployment Benefits During COVID-19: Variation Across Federal and State Unemployment Insurance Policies in the U.S.",
+      "authors": "Lee, J., Lee, J., & Zhang, L.",
+      "venue": "Journal of Public Health Policy",
+      "categories": [
+        "Economic Security",
         "Immigration Policy"
       ]
     },
@@ -296,9 +318,18 @@
     },
     {
       "status": "under-review",
-      "title": "Immigration and Visa Help-Seeking with General-Purpose AI Assistants",
+      "title": "Does Resettlement Support Narrow the AI Literacy Gap? Government Digital Education Among North Korean Refugees in South Korea",
+      "authors": "Yoo, N., & Lee, J.",
+      "venue": "International Migration",
+      "categories": [
+        "Digital & AI"
+      ]
+    },
+    {
+      "status": "under-review",
+      "title": "Reducing Administrative Burden Using Multilingual AI Assistants Among Immigrants: An Analysis of Real-World Chatbot Conversations",
       "authors": "Yoo, N., Lee, J., Zhang, X., & Ki, D.",
-      "venue": "Computer-Supported Cooperative Work Human-Computer Interaction",
+      "venue": "Government Information Quarterly",
       "categories": [
         "Digital & AI",
         "Immigration Policy"
@@ -331,7 +362,8 @@
       "categories": [
         "Economic Security",
         "Children & Families"
-      ]
+      ],
+      "note": "R&R"
     },
     {
       "status": "under-review",

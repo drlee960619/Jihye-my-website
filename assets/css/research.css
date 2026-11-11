@@ -170,6 +170,14 @@
     margin-right: 8px;
 }
 
+.pub-badge--award {
+    color: #8a5a00;
+    border-color: #d9a520;
+    background: #fdf5e1;
+}
+
+.pub-badge--award i { font-size: 10px; margin-right: 2px; }
+
 .pub-badge--note {
     background: var(--primary-color);
     color: #fff;
