@@ -56,7 +56,8 @@
       "categories": [
         "Economic Security",
         "Immigration Policy"
-      ]
+      ],
+      "chart": false
     },
     {
       "status": "published",
@@ -134,7 +135,8 @@
       "url": "https://doi.org/10.7936/f4tn-p468",
       "categories": [
         "Economic Security"
-      ]
+      ],
+      "chart": false
     },
     {
       "status": "published",
