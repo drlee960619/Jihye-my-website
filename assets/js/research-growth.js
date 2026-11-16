@@ -21,7 +21,8 @@
             : (pillars.length ? pillars.slice() : d.categories.slice());
         const years = [...new Set(d.papers.filter(p => p.status === 'published').map(p => p.year))].sort((a, b) => a - b);
         const cols = years.map(y => ({ label: String(y), year: String(y), status: 'published' }))
-            .concat([{ label: 'Under review', year: '', status: 'under-review' }]);
+            .concat([{ label: 'Published', sub: 'total', year: '', status: 'published', total: true },
+                     { label: 'Under review', year: '', status: 'under-review' }]);
 
         const inCol = (p, col) => p.status === col.status && (col.year === '' || String(p.year) === col.year);
         const count = (c, col) => d.papers.filter(p => inCol(p, col) &&
@@ -30,12 +31,17 @@
         const showTotal = mode === 'overlap';
 
         const nCols = cols.length, x0 = 330, xEnd = 900, dx = (xEnd - x0) / (nCols - 1);
-        const y0 = 72, dy = 50, H = y0 + (rows.length - 1 + (showTotal ? 1.4 : 0)) * dy + 44;
+        const y0 = 88, dy = 52, H = y0 + (rows.length - 1 + (showTotal ? 1.4 : 0)) * dy + 44;
         const o = [`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 ${H}" width="100%" role="img" aria-label="Number of papers by topic and year">`];
 
-        cols.forEach((c, j) => o.push(`<text class="g-yr" x="${x0 + j * dx}" y="40" text-anchor="middle">${c.label}</text>`));
-        const sepX = x0 + (nCols - 1.5) * dx;
-        o.push(`<line x1="${sepX}" y1="26" x2="${sepX}" y2="${H - 18}" stroke="#ddd" stroke-dasharray="4 4"/>`);
+        cols.forEach((c, j) => {
+            o.push(`<text class="g-yr${c.total ? ' g-yr--tot' : ''}" x="${x0 + j * dx}" y="${c.sub ? 34 : 50}" text-anchor="middle">${c.label}</text>`);
+            if (c.sub) o.push(`<text class="g-yr g-yr--sub" x="${x0 + j * dx}" y="50" text-anchor="middle">${c.sub}</text>`);
+        });
+        [nCols - 2.5, nCols - 1.5].forEach(k => {
+            const sx = x0 + k * dx;
+            o.push(`<line x1="${sx}" y1="22" x2="${sx}" y2="${H - 18}" stroke="#ddd" stroke-dasharray="4 4"/>`);
+        });
         if (pillars.length && pillars.length < rows.length) {
             const yy = y0 + (pillars.length - 0.5) * dy;
             o.push(`<line x1="70" y1="${yy}" x2="${xEnd + 40}" y2="${yy}" stroke="#eee"/>`);
@@ -48,7 +54,7 @@
             cols.forEach((k, j) => {
                 const n = count(c, k);
                 if (!n) return;
-                const X = x0 + j * dx, r = 8 + n * 2.8, ur = k.status === 'under-review';
+                const X = x0 + j * dx, r = 7 + n * 2.2, ur = k.status === 'under-review';
                 o.push(`<g class="g-dot" tabindex="0" role="button" data-cat="${esc(c)}" data-year="${k.year}" data-status="${k.status}"
                     aria-label="${esc(c)}, ${k.label}: ${n} paper${n > 1 ? 's' : ''}">
                     <title>${esc(c)} · ${k.label}: ${n} paper${n > 1 ? 's' : ''}</title>
@@ -65,16 +71,12 @@
                 const X = x0 + j * dx, ur = k.status === 'under-review';
                 o.push(`<g class="g-dot" tabindex="0" role="button" data-cat="" data-year="${k.year}" data-status="${k.status}"
                     aria-label="All papers, ${k.label}: ${n}"><title>All papers · ${k.label}: ${n}</title>
-                    <circle cx="${X}" cy="${Y}" r="${(8 + n * 1.2).toFixed(1)}" fill="${ur ? '#fff' : TC}" stroke="${TC}" stroke-width="2"/>
+                    <circle cx="${X}" cy="${Y}" r="${(8 + n * 0.9).toFixed(1)}" fill="${ur ? '#fff' : TC}" stroke="${TC}" stroke-width="2"/>
                     <text class="g-n" x="${X}" y="${Y + 4}" text-anchor="middle" fill="${ur ? TC : '#fff'}">${n}</text></g>`);
             });
         }
         o.push('</svg>');
-        // Totals that match the Published / Under Review tabs below
-        const nPub = d.papers.filter(p => p.status === 'published').length;
-        const nUr = d.papers.filter(p => p.status === 'under-review').length;
-        const sum = `<div class="g-sum"><span><b>${nPub}</b> published</span><span><b>${nUr}</b> under review</span></div>`;
-        box.innerHTML = sum + o.join('');
+        box.innerHTML = o.join('');
     }).catch(() => { box.closest('.growth').hidden = true; });
 
     function apply(g) {
