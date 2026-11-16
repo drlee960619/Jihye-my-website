@@ -70,7 +70,11 @@
             });
         }
         o.push('</svg>');
-        box.innerHTML = o.join('');
+        // Totals that match the Published / Under Review tabs below
+        const nPub = d.papers.filter(p => p.status === 'published').length;
+        const nUr = d.papers.filter(p => p.status === 'under-review').length;
+        const sum = `<div class="g-sum"><span><b>${nPub}</b> published</span><span><b>${nUr}</b> under review</span></div>`;
+        box.innerHTML = sum + o.join('');
     }).catch(() => { box.closest('.growth').hidden = true; });
 
     function apply(g) {

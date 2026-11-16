@@ -263,3 +263,6 @@
     .growth { overflow-x: auto; }
     .growth svg { min-width: 620px; }
 }
+
+.growth .g-sum { display: flex; justify-content: center; gap: 28px; margin: 0 0 6px; font-size: 15px; color: #666; }
+.growth .g-sum b { font-size: 26px; font-weight: 700; color: var(--primary-color); margin-right: 6px; vertical-align: -3px; }
