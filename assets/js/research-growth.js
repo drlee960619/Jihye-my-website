@@ -21,7 +21,7 @@
             : (pillars.length ? pillars.slice() : d.categories.slice());
         const years = [...new Set(d.papers.filter(p => p.status === 'published').map(p => p.year))].sort((a, b) => a - b);
         const cols = years.map(y => ({ label: String(y), year: String(y), status: 'published' }))
-            .concat([{ label: 'Published', sub: 'total', year: '', status: 'published', total: true },
+            .concat([{ label: 'Published', year: '', status: 'published', total: true },
                      { label: 'Under review', year: '', status: 'under-review' }]);
 
         const inCol = (p, col) => p.status === col.status && (col.year === '' || String(p.year) === col.year);
