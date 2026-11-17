@@ -84,7 +84,7 @@
             const badges = [
                 p.type ? `<span class="pub-badge">${esc(p.type)}</span>` : '',
                 p.note ? `<span class="pub-badge pub-badge--note">${esc(p.note)}</span>` : '',
-                p.award ? `<span class="pub-badge pub-badge--award"><i class="fas fa-award"></i> ${esc(p.award)}</span>` : ''
+                p.award ? `<span class="pub-badge">Award</span>` : ''
             ].join('');
             const title = p.url
                 ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.title)}</a>`
@@ -99,7 +99,7 @@
                 : '';
             return `${head}<li class="pub-item">
                 <h3 class="pub-title">${badges}${title}</h3>
-                <p class="pub-cite">${cite}</p>
+                <p class="pub-cite">${cite}</p>${p.award ? `<p class="pub-award">${esc(p.award)}</p>` : ''}
                 <div class="pub-meta">${tags}${link}</div>
             </li>`;
         }).join('');
